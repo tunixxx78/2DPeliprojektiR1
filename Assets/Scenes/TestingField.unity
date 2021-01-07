@@ -128,6 +128,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3695572719298507528, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507528, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: airAcceleration
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507528, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: walkAcceleration
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507528, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: groundDeceleration
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3695572719298507530, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
         type: 3}
       propertyPath: m_Sprite
@@ -194,6 +214,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507532, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507532, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695572719298507532, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3695572719298507575, guid: 47d6ab1e6ef45ff4ab1ee6f7ac3d8acd,
         type: 3}
       propertyPath: m_Name
@@ -242,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interpVelocity: 0
   minDistance: 0
-  followDistance: 0
+  followDistance: 1
   target: {fileID: 529883282}
   offset: {x: 0, y: 0, z: 0}
 --- !u!20 &519420031
@@ -372,7 +407,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &591642481
