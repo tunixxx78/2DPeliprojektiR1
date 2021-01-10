@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CloneSpawner : MonoBehaviour
 {
+
     ClonePooler clonePooler;
 
     private void Start()

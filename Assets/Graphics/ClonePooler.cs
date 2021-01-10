@@ -10,7 +10,7 @@ public class ClonePooler : MonoBehaviour
         public string tag;
         public GameObject prefab;
         public int size;
-        public float spawnTime, spawndelay;
+        
     }
 
     #region Singleton
