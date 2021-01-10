@@ -25,11 +25,14 @@ public class CloneSpawner2 : MonoBehaviour
         
         timeSinceSpawn += Time.deltaTime;
 
-        if (timeSinceSpawn >= timeToSpawn)
+        if (timeSinceSpawn >= timeToSpawn && clonePool != null)
         {
             GameObject newClone = clonePool.GetClone();
-            newClone.transform.position = this.transform.position;
-            timeSinceSpawn = 0f;
+            if (newClone != null)
+            {
+                newClone.transform.position = this.transform.position;
+                timeSinceSpawn = 0f;
+            }
         }
     }
 }
