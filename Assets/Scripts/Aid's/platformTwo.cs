@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class platformOne : baseMovingPlatform
+public class platformTwo : baseMovingPlatform
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
-        if (collision.collider.CompareTag("LowerPoint"))
+
+        if (collision.collider.CompareTag("LeftPoint"))
         {
             ChangeState(State.Idle2);
 
@@ -20,22 +20,8 @@ public class platformOne : baseMovingPlatform
 
     protected override void PatrolUp_Right()
     {
-        Movements = new Vector2(rbPlatform.velocity.x, transform.localScale.y * moveSpeed);
-        
+        Movements = new Vector2(transform.localScale.x * moveSpeed, rbPlatform.velocity.y);
 
-        currentPatrolTime += Time.deltaTime;
-
-        if ( currentPatrolTime >= maxPatrolTime)
-        {
-            currentPatrolTime = 0f;
-            ChangeState(State.Idle);
-        }
-
-        
-    }
-    protected override void PatrolDown_Left()
-    {
-        Movements = new Vector2(rbPlatform.velocity.x, -transform.localScale.y * moveSpeed);
 
         currentPatrolTime += Time.deltaTime;
 
@@ -43,15 +29,29 @@ public class platformOne : baseMovingPlatform
         {
             currentPatrolTime = 0f;
             ChangeState(State.Idle);
+        }
+
+
+    }
+    protected override void PatrolDown_Left()
+    {
+        Movements = new Vector2(-transform.localScale.x * moveSpeed, rbPlatform.velocity.y);
+
+        currentPatrolTime += Time.deltaTime;
+
+        if (currentPatrolTime >= maxPatrolTime)
+        {
+            currentPatrolTime = 0f;
+            ChangeState(State.Idle2);
 
         }
     }
 
-    
+
 
     protected override void Idle()
     {
-        Movements = new Vector2(rbPlatform.velocity.x, 0f);
+        Movements = new Vector2(0f, rbPlatform.velocity.x);
         currentIdleTime += Time.deltaTime;
 
         if (currentIdleTime > maxIdleTime)
@@ -59,14 +59,14 @@ public class platformOne : baseMovingPlatform
             currentIdleTime = 0f;
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
             ChangeState(State.PatrolDown_Left);
-            
+
 
         }
     }
 
     protected override void Idle2()
     {
-        Movements = new Vector2(rbPlatform.velocity.x, 0f);
+        Movements = new Vector2(0f, rbPlatform.velocity.y);
         currentIdleTime += Time.deltaTime;
 
         if (currentIdleTime > maxIdleTime)
@@ -78,4 +78,5 @@ public class platformOne : baseMovingPlatform
 
         }
     }
+
 }

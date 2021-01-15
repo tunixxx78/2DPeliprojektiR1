@@ -14,19 +14,21 @@ public abstract class baseMovingPlatform : MonoBehaviour
     protected bool hasPassanger;
     protected Transform player;
 
-    private State aidState = State.Patrol;
+    private State aidState = State.PatrolUp_Right;
     private Action currentStateMethod;
 
     protected enum State
     {
         Idle,
-        Patrol
+        Idle2,
+        PatrolUp_Right,
+        PatrolDown_Left
     }
 
     private void Awake()
     {
         rbPlatform = GetComponent<Rigidbody2D>();
-        currentStateMethod = Patrol;
+        currentStateMethod = PatrolUp_Right;
     }
 
     private void Start()
@@ -53,7 +55,9 @@ public abstract class baseMovingPlatform : MonoBehaviour
     }
 
     protected abstract void Idle();
-    protected abstract void Patrol();
+    protected abstract void Idle2();
+    protected abstract void PatrolUp_Right();
+    protected abstract void PatrolDown_Left();
 
     protected virtual void ChangeState(State newState)
     {
@@ -61,8 +65,14 @@ public abstract class baseMovingPlatform : MonoBehaviour
 
         switch(newState)
         {
-            case State.Patrol:
-                currentStateMethod = Patrol;
+            case State.PatrolUp_Right:
+                currentStateMethod = PatrolUp_Right;
+                break;
+            case State.PatrolDown_Left:
+                currentStateMethod = PatrolDown_Left;
+                break;
+            case State.Idle2:
+                currentStateMethod = Idle2;
                 break;
             default:
                 currentStateMethod = Idle;
