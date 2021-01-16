@@ -46,14 +46,6 @@ public abstract class baseMovingPlatform : MonoBehaviour
         currentStateMethod();
     }
 
-    protected virtual void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            ChangeState(State.Idle);
-        }
-    }
-
     protected abstract void Idle();
     protected abstract void Idle2();
     protected abstract void PatrolUp_Right();

@@ -12,11 +12,15 @@ public class platformOne : baseMovingPlatform
             ChangeState(State.Idle2);
 
         }
+
         else
         {
             ChangeState(State.Idle);
         }
+        
     }
+
+   
 
     protected override void PatrolUp_Right()
     {
