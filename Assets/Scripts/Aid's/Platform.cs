@@ -11,6 +11,7 @@ public class Platform : MonoBehaviour
     private void Start()
     {
         nextPos = startPos.position;
+
     }
 
     private void Update()
@@ -35,4 +36,5 @@ public class Platform : MonoBehaviour
 
     }
 
+    
 }

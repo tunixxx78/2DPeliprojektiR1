@@ -7,10 +7,9 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private float moveSpeed, climbSpeed, jumpForce, distance;
     [SerializeField] GameObject Player;
     [SerializeField] private LayerMask whatIsLadder;
-    private float xMovements, yMovements;
+    private float xMovements;
     private Rigidbody2D rbchar;
     private bool isJumping, canJump;
-    private bool isClimbing;
 
     private void Awake()
     {
@@ -24,30 +23,6 @@ public class PlayerMovements : MonoBehaviour
         if (isJumping && canJump)
         {
             rbchar.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
-
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
-
-        if (hitInfo.collider != null)
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
-                isClimbing = true;
-            }
-            else
-            {
-                isClimbing = false;
-            }
-        }
-        if (isClimbing == true)
-        {
-            yMovements = Input.GetAxisRaw("Vertical");
-            rbchar.velocity = new Vector2(rbchar.velocity.x, yMovements * climbSpeed);
-            rbchar.gravityScale = 0f;
-        }
-        else
-        {
-            rbchar.gravityScale = 1f;
         }
 
     }
