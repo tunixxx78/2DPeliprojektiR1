@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed, jumpForce;
+    [SerializeField] private float moveSpeed, climbSpeed, jumpForce, distance;
     [SerializeField] GameObject Player;
-
+    [SerializeField] private LayerMask whatIsLadder;
     private float xMovements;
     private Rigidbody2D rbchar;
     private bool isJumping, canJump;

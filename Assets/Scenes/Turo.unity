@@ -153,8 +153,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 20
+  climbSpeed: 2
   jumpForce: 5
+  distance: 1
   Player: {fileID: 84060633}
+  whatIsLadder:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!4 &84060635
 Transform:
   m_ObjectHideFlags: 0
@@ -163,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84060633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.2, z: 0.32}
+  m_LocalPosition: {x: 174.2, y: -5.9, z: 0.32}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 1724386770}
@@ -183,9 +188,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026278853, y: -0.47958994}
+  m_Offset: {x: -0.042703748, y: -0.08536339}
   serializedVersion: 2
-  m_Radius: 0.23064125
+  m_Radius: 0.7727146
 --- !u!50 &84060637
 Rigidbody2D:
   serializedVersion: 4
@@ -204,7 +209,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!1001 &111795722
@@ -217,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
@@ -529,7 +534,7 @@ PrefabInstance:
     - target: {fileID: 8621215486496011879, guid: 2d7cafb030c2b4a6d8a8dcddcbc99463,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8621215486496011879, guid: 2d7cafb030c2b4a6d8a8dcddcbc99463,
         type: 3}
@@ -574,7 +579,7 @@ Transform:
   - {fileID: 1455743571}
   - {fileID: 1790539841}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257707913
 GameObject:
@@ -1333,7 +1338,7 @@ GameObject:
   - component: {fileID: 435196867}
   - component: {fileID: 435196869}
   - component: {fileID: 435196868}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rope/Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2410,7 +2415,7 @@ PrefabInstance:
     - target: {fileID: 9207696465730303749, guid: f9da967ed3c2a473b8f39eea5d239eb5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9207696465730303749, guid: f9da967ed3c2a473b8f39eea5d239eb5,
         type: 3}
@@ -3104,7 +3109,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1658971810}
   - component: {fileID: 1658971809}
-  m_Layer: 0
+  - component: {fileID: 1658971811}
+  m_Layer: 10
   m_Name: Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -3124,7 +3130,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.049713135, y: 2.655363}
+  m_Offset: {x: 0.061805725, y: 2.9575987}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3135,7 +3141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44692993, y: 10.375912}
+  m_Size: {x: 0.3744049, y: 9.626368}
   m_EdgeRadius: 0
 --- !u!4 &1658971810
 Transform:
@@ -3152,6 +3158,19 @@ Transform:
   m_Father: {fileID: 814471740}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658971811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658971808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bac9d723275413dbf50ecd923730aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbSpeed: 5
 --- !u!1 &1724386769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3297,7 +3316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1823283524
 PrefabInstance:
@@ -3378,7 +3397,7 @@ PrefabInstance:
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
@@ -3691,7 +3710,7 @@ PrefabInstance:
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 749023057388258728, guid: df170a39114d84450b967836d91d21c8,
         type: 3}
