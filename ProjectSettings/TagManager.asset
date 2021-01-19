@@ -4,11 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ground
-  - Elevator
-  - LowerPoint
-  - LeftPoint
-  - Platform
   - Enemy
   layers:
   - Default
@@ -21,7 +16,7 @@ TagManager:
   - 
   - Ground
   - GroundLevel
-  - Ladder
+  - PostProcessing
   - 
   - 
   - 
@@ -46,4 +41,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 70859303
+    locked: 0
+  - name: Foliage
+    uniqueID: 4030136165
     locked: 0
