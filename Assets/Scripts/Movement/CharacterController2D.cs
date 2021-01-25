@@ -2,97 +2,112 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
+
 public class CharacterController2D : MonoBehaviour
 {
-    [SerializeField, Tooltip("Max speed, in units per second, that the character moves.")]
-    float speed = 9;
+    // Move player in 2D space
+    public float maxSpeed = 3.4f;
+    public float jumpHeight = 6.5f;
+    public float gravityScale = 1.5f;
+    public Camera mainCamera;
 
-    [SerializeField, Tooltip("Acceleration while grounded.")]
-    float walkAcceleration = 75;
+    bool facingRight = true;
+    float moveDirection = 0;
+    bool isGrounded = false;
+    Vector3 cameraPos;
+    Rigidbody2D r2d;
+    CapsuleCollider2D mainCollider;
+    Transform t;
 
-    [SerializeField, Tooltip("Acceleration while in the air.")]
-    float airAcceleration = 30;
-
-    [SerializeField, Tooltip("Deceleration applied when character is grounded and not attempting to move.")]
-    float groundDeceleration = 70;
-
-    [SerializeField, Tooltip("Max height the character will jump regardless of gravity")]
-    float jumpHeight = 4;
-
-    private BoxCollider2D boxCollider;
-
-    private Vector2 velocity;
-
-    /// <summary>
-    /// Set to true when the character intersects a collider beneath
-    /// them in the previous frame.
-    /// </summary>
-    private bool grounded;
-
-    private void Awake()
+    // Use this for initialization
+    void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        t = transform;
+        r2d = GetComponent<Rigidbody2D>();
+        mainCollider = GetComponent<CapsuleCollider2D>();
+        r2d.freezeRotation = true;
+        r2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        r2d.gravityScale = gravityScale;
+        facingRight = t.localScale.x > 0;
+
+        if (mainCamera)
+        {
+            cameraPos = mainCamera.transform.position;
+        }
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        // Use GetAxisRaw to ensure our input is either 0, 1 or -1.
-        float moveInput = Input.GetAxisRaw("Horizontal");
-
-        if (grounded)
+        // Movement controls
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
         {
-            velocity.y = 0;
-
-            if (Input.GetButtonDown("Jump"))
-            {
-                // Calculate the velocity required to achieve the target jump height.
-                velocity.y = Mathf.Sqrt(2 * jumpHeight * Mathf.Abs(Physics2D.gravity.y));
-            }
-        }
-
-        float acceleration = grounded ? walkAcceleration : airAcceleration;
-        float deceleration = grounded ? groundDeceleration : 0;
-
-        if (moveInput != 0)
-        {
-            velocity.x = Mathf.MoveTowards(velocity.x, speed * moveInput, acceleration * Time.deltaTime);
+            moveDirection = Input.GetKey(KeyCode.A) ? -1 : 1;
         }
         else
         {
-            velocity.x = Mathf.MoveTowards(velocity.x, 0, deceleration * Time.deltaTime);
+            if (isGrounded || r2d.velocity.magnitude < 0.01f)
+            {
+                moveDirection = 0;
+            }
         }
 
-        velocity.y += Physics2D.gravity.y * Time.deltaTime;
-
-        transform.Translate(velocity * Time.deltaTime);
-
-        grounded = false;
-
-        // Retrieve all colliders we have intersected after velocity has been applied.
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, boxCollider.size, 0);
-
-        foreach (Collider2D hit in hits)
+        // Change facing direction
+        if (moveDirection != 0)
         {
-            // Ignore our own collider.
-            if (hit == boxCollider)
-                continue;
-
-            ColliderDistance2D colliderDistance = hit.Distance(boxCollider);
-
-            // Ensure that we are still overlapping this collider.
-            // The overlap may no longer exist due to another intersected collider
-            // pushing us out of this one.
-            if (colliderDistance.isOverlapped)
+            if (moveDirection > 0 && !facingRight)
             {
-                transform.Translate(colliderDistance.pointA - colliderDistance.pointB);
+                facingRight = true;
+                t.localScale = new Vector3(Mathf.Abs(t.localScale.x), t.localScale.y, transform.localScale.z);
+            }
+            if (moveDirection < 0 && facingRight)
+            {
+                facingRight = false;
+                t.localScale = new Vector3(-Mathf.Abs(t.localScale.x), t.localScale.y, t.localScale.z);
+            }
+        }
 
-                // If we intersect an object beneath us, set grounded to true. 
-                if (Vector2.Angle(colliderDistance.normal, Vector2.up) < 90 && velocity.y < 0)
+        // Jumping
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        {
+            r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
+        }
+
+        // Camera follow
+        if (mainCamera)
+        {
+            mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        Bounds colliderBounds = mainCollider.bounds;
+        float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
+        Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
+        // Check if player is grounded
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
+        //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
+        isGrounded = false;
+        if (colliders.Length > 0)
+        {
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i] != mainCollider)
                 {
-                    grounded = true;
+                    isGrounded = true;
+                    break;
                 }
             }
         }
+
+        // Apply movement velocity
+        r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+
+        // Simple debug
+        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(0, colliderRadius, 0), isGrounded ? Color.green : Color.red);
+        Debug.DrawLine(groundCheckPos, groundCheckPos - new Vector3(colliderRadius, 0, 0), isGrounded ? Color.green : Color.red);
     }
 }
