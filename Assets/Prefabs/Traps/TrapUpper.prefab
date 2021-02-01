@@ -86,11 +86,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8db57a9a3b9145429b0ba249a46bbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapSize: 5
-  visionRange: 15
-  moveRange: 10
-  attackRange: 5
+  trapSize: 3
+  visionRange: 10
+  moveRange: 6
+  attackRange: 2
   maxIdleTime: 100
+  rend: {fileID: 0}
+  IdlePlant: {fileID: 21300000, guid: f428e14b3e6f24a9aa151d68c354e1f7, type: 3}
+  AtackPlant: {fileID: 21300000, guid: 07a4bfa9c8d6f4a07ac861d53b0993aa, type: 3}
 --- !u!61 &9207696465730303745
 BoxCollider2D:
   m_ObjectHideFlags: 0
