@@ -43,10 +43,10 @@ GameObject:
   - component: {fileID: 8607585487562230560}
   - component: {fileID: 8607585487562230563}
   - component: {fileID: 8607585487562230562}
-  - component: {fileID: 8607585487562230557}
+  - component: {fileID: 1231464651}
   m_Layer: 0
   m_Name: KnightPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 9625707babee7934aa365e0d7da4a107, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -172,7 +172,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8607585487562230557
+--- !u!114 &1231464651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,12 +181,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8607585487562230556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8307916082aae9c4b96f4f10347a57ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e94fc49d33d9764ea40848094670009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 8
+  speed: 7
+  jumpForce: 8
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+  rememberGroundedFor: 0.1
+  isGroundedChecker: {fileID: 8607585487541516239}
+  checkGroundRadius: 0.05
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  groundCheck: {fileID: 8607585487541516239}
-  jumpPower: 8
