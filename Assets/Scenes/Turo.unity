@@ -168,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84060633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 163.29, y: 7.97, z: 0.32}
+  m_LocalPosition: {x: 65.2, y: 10.3, z: 0.32}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 1724386770}
@@ -3104,6 +3104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointShortcut: {fileID: 1519527409}
   player: {fileID: 84060633}
+  cloneCharacter: {fileID: 0}
 --- !u!61 &921332912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3806,10 +3807,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3750903355696927245, guid: 87a34ba65fba7474f9807b7b9e468714,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750903355696927245, guid: 87a34ba65fba7474f9807b7b9e468714,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3750903355696927246, guid: 87a34ba65fba7474f9807b7b9e468714,
         type: 3}
       propertyPath: m_Name
-      value: Enemy3
+      value: EnemyOne
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a34ba65fba7474f9807b7b9e468714, type: 3}
