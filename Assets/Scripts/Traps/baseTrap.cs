@@ -8,11 +8,14 @@ using System;
 
 public abstract class baseTrap : MonoBehaviour
 {
-    [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f;
-    protected float distanceOfPlayer, currentIdleTime;
+    [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f, timeToSpawn = 5f, delayTime = 1f;
+    protected float distanceOfPlayer, currentIdleTime, timeSinceSpawn;
     protected bool hasLineOfSight;
     protected Transform player;
     protected Vector2 movements;
+    [SerializeField] protected GameObject ammoPrefab;
+    [SerializeField] protected Transform spawnPointForTrap;
+    
 
     private State trapState = State.Idle;
     protected Rigidbody2D rbtrap;
@@ -35,6 +38,7 @@ public abstract class baseTrap : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player").transform;
+        StartCoroutine(StartSpawning());
 
     }
 
@@ -48,6 +52,11 @@ public abstract class baseTrap : MonoBehaviour
         currentStateMethod();
         CheckLineOfSight();
 
+    }
+
+    private IEnumerator StartSpawning()
+    {
+        yield return new WaitForSeconds(delayTime);
     }
 
     private void CheckLineOfSight()
