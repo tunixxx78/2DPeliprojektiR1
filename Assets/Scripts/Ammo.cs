@@ -14,7 +14,9 @@ public class Ammo : MonoBehaviour
 
     private void Update()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        transform.position = transform.position * speed * Time.deltaTime; 
         
     }
+
+    
 }
