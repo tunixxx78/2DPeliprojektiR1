@@ -46,7 +46,11 @@ public class trapUpper : baseTrap
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Attack);
-            Debug.Log("Attack");
+            transform.localScale = new Vector3(1f, -trapSize, 1f);
+            rend.sprite = AtackPlant;
+            Instantiate(ammoPrefab, spawnPointForTrap.position, Quaternion.identity);
+            
+            
         }
     }
 
