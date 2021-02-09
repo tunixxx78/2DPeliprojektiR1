@@ -525,6 +525,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b284faed67fe4acf8cc2e0f0f1c27f7, type: 3}
+--- !u!50 &214282873 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 9207696465730303747, guid: f9da967ed3c2a473b8f39eea5d239eb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177799295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &230996341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3448,11 @@ PrefabInstance:
       propertyPath: rend
       value: 
       objectReference: {fileID: 633150505}
+    - target: {fileID: 9207696465730303746, guid: f9da967ed3c2a473b8f39eea5d239eb5,
+        type: 3}
+      propertyPath: upperTrap
+      value: 
+      objectReference: {fileID: 214282873}
     - target: {fileID: 9207696465730303749, guid: f9da967ed3c2a473b8f39eea5d239eb5,
         type: 3}
       propertyPath: m_RootOrder

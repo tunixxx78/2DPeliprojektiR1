@@ -6,6 +6,7 @@ public class trapUpper : baseTrap
 {
     [SerializeField] private SpriteRenderer rend;
     [SerializeField] private Sprite IdlePlant, AtackPlant;
+    [SerializeField] private Rigidbody2D upperTrap;
 
     protected override void Idle()
     {
@@ -57,5 +58,15 @@ public class trapUpper : baseTrap
     protected override void Die()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Ammo"))
+        {
+            Destroy(gameObject);
+            rend.sprite = null;
+
+        }
     }
 }
