@@ -6,6 +6,7 @@ public class Patrol : MonoBehaviour
 {
     public float speed;
     public float distance;
+    public Rigidbody2D enemyDummy;
 
     private bool movingRight = true;
 
@@ -29,6 +30,14 @@ public class Patrol : MonoBehaviour
                 transform.eulerAngles = new Vector3(0f, 0f, 0f);
                 movingRight = true;
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Ammo"))
+        {
+            Destroy(gameObject);
         }
     }
 }

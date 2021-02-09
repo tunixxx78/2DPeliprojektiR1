@@ -14,7 +14,14 @@ public class Shortcut : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.transform.position = spawnPointShortcut.transform.position;
-        cloneCharacter.transform.position = spawnPointShortcut.transform.position;
+        if (collision.CompareTag("CloneCharacter"))
+            {
+            cloneCharacter.transform.position = spawnPointShortcut.transform.position;
+            }
+        if (collision.CompareTag("Player"))
+        {
+            player.transform.position = spawnPointShortcut.transform.position;
+        }
+
     }
 }

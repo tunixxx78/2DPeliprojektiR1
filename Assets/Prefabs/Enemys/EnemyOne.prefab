@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3750903355696927243}
   - component: {fileID: 3750903355696927244}
   - component: {fileID: 3750903355696927245}
+  - component: {fileID: 3795997715319819747}
   m_Layer: 0
   m_Name: EnemyOne
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,14 +88,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  moveSpeed: 2
-  moveSpeedAttack: 0
+  moveSpeed: 1
+  moveSpeedAttack: 2
   attackPower: 0
   maxIdleTime: 2
   maxPatrolTime: 3
   visionRange: 5
   attackRange: 2
   agressiveRange: 0
+--- !u!61 &3795997715319819747
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750903355696927246}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00756073, y: 0.31003046}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.92437744, y: 0.793313}
+  m_EdgeRadius: 0
 --- !u!1 &3750903356739114538
 GameObject:
   m_ObjectHideFlags: 0

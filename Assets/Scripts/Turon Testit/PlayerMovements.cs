@@ -45,6 +45,7 @@ public class PlayerMovements : MonoBehaviour
         {
             Player.transform.parent = collision.gameObject.transform;
         }
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)

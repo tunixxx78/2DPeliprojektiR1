@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyOne : BaseEnemy
 {
+    [SerializeField] private Rigidbody2D enemyOne;
+
     protected override void Agressive()
     {
         if (distanceOfPlayer <= attackRange)
@@ -55,6 +57,14 @@ public class EnemyOne : BaseEnemy
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
             ChangeState(State.Patrol);
 
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Ammo"))
+        {
+            Destroy(gameObject);
         }
     }
 }
