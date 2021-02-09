@@ -6,8 +6,11 @@ public class trapUpper : baseTrap
 {
     [SerializeField] private SpriteRenderer rend;
     [SerializeField] private Sprite IdlePlant, AtackPlant;
-    [SerializeField] private Rigidbody2D upperTrap;
+    private Rigidbody2D upperTrap;
+    public GameObject ammoSpawner;
+    public bool setActive;
 
+    
     protected override void Idle()
     {
         movements = new Vector2(rbtrap.velocity.x, 0f);
@@ -21,6 +24,7 @@ public class trapUpper : baseTrap
             if (distanceOfPlayer <= visionRange)
             {
                 ChangeState(State.Move);
+                ammoSpawner.SetActive(false);
                 Debug.Log("move");
             }
         }
@@ -33,12 +37,16 @@ public class trapUpper : baseTrap
            ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, -trapSize, 1f);
             rend.sprite = AtackPlant;
+            ammoSpawner.SetActive(true);
+
         }
        if (distanceOfPlayer >= moveRange)
         {
             ChangeState(State.Idle);
             transform.localScale = new Vector3(1f, 1f, 1f);
             rend.sprite = IdlePlant;
+            ammoSpawner.SetActive(false);
+
         }
     }
 
@@ -49,8 +57,7 @@ public class trapUpper : baseTrap
             ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, -trapSize, 1f);
             rend.sprite = AtackPlant;
-            Instantiate(ammoPrefab, spawnPointForTrap.position, Quaternion.identity);
-            
+            ammoSpawner.SetActive(true);
             
         }
     }

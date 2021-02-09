@@ -4,12 +4,12 @@ using UnityEngine;
 using System;
 
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(Rigidbody2D))]
+//[RequireComponent(typeof(Rigidbody2D))]
 
 public abstract class baseTrap : MonoBehaviour
 {
-    [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f, timeToSpawn = 5f, delayTime = 1f;
-    protected float distanceOfPlayer, currentIdleTime, timeSinceSpawn;
+    [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f;
+    protected float distanceOfPlayer, currentIdleTime;
     protected bool hasLineOfSight;
     protected Transform player;
     protected Vector2 movements;
@@ -17,7 +17,7 @@ public abstract class baseTrap : MonoBehaviour
     [SerializeField] protected Transform spawnPointForTrap;
     
 
-    private State trapState = State.Idle;
+    State trapState = State.Idle;
     protected Rigidbody2D rbtrap;
     private Action currentStateMethod;
 
@@ -38,8 +38,6 @@ public abstract class baseTrap : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player").transform;
-        StartCoroutine(StartSpawning());
-
     }
 
     private void FixedUpdate()
@@ -52,14 +50,18 @@ public abstract class baseTrap : MonoBehaviour
         currentStateMethod();
         CheckLineOfSight();
 
+        //timeSinceSpawn += Time.deltaTime;
+
+        /*if (timeSinceSpawn >= timeToSpawn && trapState == State.Attack)
+        {
+            Instantiate(ammoPrefab, spawnPointForTrap.position, Quaternion.identity);
+            Destroy(gameObject, 3f);
+        }*/
     }
 
-    private IEnumerator StartSpawning()
-    {
-        yield return new WaitForSeconds(delayTime);
-    }
+    
 
-    private void CheckLineOfSight()
+    public void CheckLineOfSight()
     {
         distanceOfPlayer = Vector2.Distance(transform.position, player.transform.position);
         RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position);
