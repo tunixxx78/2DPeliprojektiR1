@@ -30,8 +30,6 @@ public class PlayerCharacterController : MonoBehaviour
         Jump();
         BetterJump();
         CheckIfGrounded();
-
-
     }
 
     void Move()
@@ -39,6 +37,18 @@ public class PlayerCharacterController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speed;
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
+
+        //flip character
+        Vector3 characterScale = transform.localScale;
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            characterScale.x = -1;
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            characterScale.x = 1;
+        }
+        transform.localScale = characterScale;
     }
 
     void Jump()
