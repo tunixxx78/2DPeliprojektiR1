@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3063315544644097888}
   - component: {fileID: 730153508294863788}
+  - component: {fileID: -3911134912309485476}
   - component: {fileID: 7505912086623547303}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 23
+  m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: ad7ec541b5f323f48b68ba469ce1418c, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -83,6 +84,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &-3911134912309485476
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7030776935095278181}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &7505912086623547303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171547628872450867}
   - component: {fileID: 8889383405813524951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CrossbowTip (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
