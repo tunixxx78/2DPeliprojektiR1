@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7373833731915227502}
   m_Layer: 0
   m_Name: TrapAmmoPrefab
-  m_TagString: Untagged
+  m_TagString: TrapAmmo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a2d47c705d448edb8a826432b23aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  force: 5
 --- !u!58 &7373833731915227502
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -140,6 +140,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00819397, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.17487335

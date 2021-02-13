@@ -5,13 +5,34 @@ using UnityEngine;
 public class AmmoMovement : MonoBehaviour
 {
     private Rigidbody2D ammoRb;
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float force = 3f;
 
-    private void FixedUpdate()
+    private void Awake()
     {
-        transform.position += -transform.right * speed * Time.deltaTime;
-        Destroy(gameObject, 10f);
+        GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        transform.position += -transform.right * force * Time.deltaTime;
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+
+        if (collision.collider.CompareTag("CloneCharacter"))
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject, 3f);
+        }
+    }
 
 }

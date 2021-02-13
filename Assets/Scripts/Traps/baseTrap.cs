@@ -49,14 +49,6 @@ public abstract class baseTrap : MonoBehaviour
     {
         currentStateMethod();
         CheckLineOfSight();
-
-        //timeSinceSpawn += Time.deltaTime;
-
-        /*if (timeSinceSpawn >= timeToSpawn && trapState == State.Attack)
-        {
-            Instantiate(ammoPrefab, spawnPointForTrap.position, Quaternion.identity);
-            Destroy(gameObject, 3f);
-        }*/
     }
 
     
