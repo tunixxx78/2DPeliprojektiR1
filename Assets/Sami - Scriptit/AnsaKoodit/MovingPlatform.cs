@@ -4,19 +4,40 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    float dirX, moveSpeed = 3f;
-    bool moveRight = true;
+    private Vector3 posA;
+    private Vector3 posB;
+    private Vector3 nextPos;
 
-    void Update()
+    [SerializeField] private float speed;
+
+    [SerializeField] private Transform childtransform;
+
+    [SerializeField] private Transform transformB;
+
+    private void Start()
     {
-        if (transform.position.x > 4f)
-            moveRight = false;
-        if (transform.position.x < -4f)
-            moveRight = true;
-        if (moveRight)
-            transform.position = new Vector2(transform.position.x + moveSpeed * Time.deltaTime, transform.position.y);
-        else;
-        transform.position = new Vector2(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y);
+        posA = childtransform.localPosition;
+        posB = transformB.localPosition;
+        nextPos = posB;
+    }
 
+    private void Update()
+    {
+        Move();
+    }
+
+    private void Move()
+    {
+        childtransform.localPosition = Vector3.MoveTowards(childtransform.localPosition, nextPos, speed * Time.deltaTime);
+
+        if (Vector3.Distance(childtransform.localPosition, nextPos) <= 0.1)
+        {
+            ChangeDestination();
+        }
+    }
+    
+    private void ChangeDestination()
+    {
+        nextPos = nextPos != posA ? posA : posB;
     }
 }
