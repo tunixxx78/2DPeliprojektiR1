@@ -24,11 +24,13 @@ public class Swing : MonoBehaviour
 
     public void Push()
     {
-        if (transform.rotation.z > 0 && transform.rotation.z < rightPushRange && (body2d.angularVelocity > 0) && body2d.angularVelocity < velocityThreshold)
+        if (transform.rotation.z > 0 && transform.rotation.z < rightPushRange &&
+           (body2d.angularVelocity > 0) && body2d.angularVelocity < velocityThreshold)
         {
             body2d.angularVelocity = velocityThreshold;
         }
-        else if (transform.rotation.z < 0 && transform.rotation.z > leftPushRange && (body2d.angularVelocity < 0) && body2d.angularVelocity > velocityThreshold * -1)
+        else if (transform.rotation.z < 0 && transform.rotation.z > leftPushRange && 
+                (body2d.angularVelocity < 0) && body2d.angularVelocity > velocityThreshold * -1)
              {
                 body2d.angularVelocity = velocityThreshold * -1;
              }
