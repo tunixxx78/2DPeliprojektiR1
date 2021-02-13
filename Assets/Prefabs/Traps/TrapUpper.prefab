@@ -133,6 +133,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9207696465730303749}
     m_Modifications:
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: ammoPrefab
+      value: 
+      objectReference: {fileID: 7373833731915227499, guid: f1e21cbe107104ff6894343cf3332821,
+        type: 3}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 4482324246831819854}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: timeToSpawn
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_RootOrder
@@ -161,17 +177,17 @@ PrefabInstance:
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
@@ -188,6 +204,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6763330982631676025, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 6763330982631676025, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_Name

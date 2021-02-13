@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.4, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5980642009014091162}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90,15 +91,16 @@ MonoBehaviour:
   visionRange: 10
   moveRange: 7
   attackRange: 5
-  maxIdleTime: 0
-  timeToSpawn: 5
-  delayTime: 1
-  ammoPrefab: {fileID: 0}
-  spawnPointForTrap: {fileID: 0}
+  maxIdleTime: 100
+  ammoPrefab: {fileID: 7373833731915227499, guid: f1e21cbe107104ff6894343cf3332821,
+    type: 3}
+  spawnPointForTrap: {fileID: 5980642009014091162}
   rend: {fileID: 0}
   IdlePlant: {fileID: 21300000, guid: f428e14b3e6f24a9aa151d68c354e1f7, type: 3}
   AtackPlant: {fileID: 21300000, guid: 07a4bfa9c8d6f4a07ac861d53b0993aa, type: 3}
   lowerTrap: {fileID: 4313884936397753945}
+  ammoSpawner: {fileID: 6763330981208830681}
+  setActive: 1
 --- !u!61 &4313884936397753943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125,3 +127,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.2946502}
   m_EdgeRadius: 0
+--- !u!1001 &2004822688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4313884936397753947}
+    m_Modifications:
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: ammoPrefab
+      value: 
+      objectReference: {fileID: 7373833731915227499, guid: f1e21cbe107104ff6894343cf3332821,
+        type: 3}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 5980642009014091162}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.021568298
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.113451004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 125.85156
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763330982631676025, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPointForTrap
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8086d4a1f3e740be9fc8bee4266595a, type: 3}
+--- !u!1 &6763330981208830681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6763330982631676025, guid: b8086d4a1f3e740be9fc8bee4266595a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2004822688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5980642009014091162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2004822688}
+  m_PrefabAsset: {fileID: 0}

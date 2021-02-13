@@ -8,6 +8,7 @@ public class Shortcut : MonoBehaviour
     [SerializeField] private Transform player, cloneCharacter;
 
     private bool cloneCharacterIsOverlaping = false;
+    private bool PlayerIsOverLaping = false;
 
     private void Update()
     {
@@ -15,14 +16,22 @@ public class Shortcut : MonoBehaviour
         {
             cloneCharacter.transform.position = spawnPointShortcut.transform.position;
         }
+        if (PlayerIsOverLaping)
+        {
+            player.transform.position = spawnPointShortcut.transform.position;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "CloneCharacter")
+        if (other.tag == "Player")
             {
             cloneCharacterIsOverlaping = true;
             }
+        if (other.tag == "Player")
+        {
+            PlayerIsOverLaping = true;
+        }
         /*if (collision.CompareTag("Ammo"))
         {
             player.transform.position = spawnPointShortcut.transform.position;
@@ -34,6 +43,10 @@ public class Shortcut : MonoBehaviour
         if (other.tag == "CloneCharacter")
         {
             cloneCharacterIsOverlaping = false;
+        }
+        if (other.tag == "Player")
+        {
+            PlayerIsOverLaping = false;
         }
     }
 }

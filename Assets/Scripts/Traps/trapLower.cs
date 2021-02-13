@@ -7,6 +7,8 @@ public class trapLower : baseTrap
     [SerializeField] private SpriteRenderer rend;
     [SerializeField] private Sprite IdlePlant, AtackPlant;
     [SerializeField] private Rigidbody2D lowerTrap;
+    public GameObject ammoSpawner;
+    public bool setActive;
 
     protected override void Idle()
     {
@@ -21,6 +23,7 @@ public class trapLower : baseTrap
             if (distanceOfPlayer <= visionRange)
             {
                 ChangeState(State.Move);
+                ammoSpawner.SetActive(false);
                 Debug.Log("move");
             }
         }
@@ -33,12 +36,14 @@ public class trapLower : baseTrap
             ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, trapSize, 1f);
             rend.sprite = AtackPlant;
+            ammoSpawner.SetActive(true);
         }
         if (distanceOfPlayer >= moveRange)
         {
             ChangeState(State.Idle);
             transform.localScale = new Vector3(1f, 1f, 1f);
             rend.sprite = IdlePlant;
+            ammoSpawner.SetActive(false);
         }
     }
 
@@ -47,13 +52,21 @@ public class trapLower : baseTrap
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Attack);
-            Debug.Log("Attack");
+            transform.localScale = new Vector3(1f, trapSize, 1f);
+            rend.sprite = AtackPlant;
+            ammoSpawner.SetActive(true);
         }
     }
 
     protected override void Die()
     {
+        Death();
+    }
 
+    public void Death()
+    {
+        Destroy(gameObject);
+        rend.sprite = null;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
