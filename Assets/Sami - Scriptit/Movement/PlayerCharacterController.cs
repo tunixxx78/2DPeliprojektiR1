@@ -20,7 +20,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
-    private bool isJumping, canJump; //Turon lisäyksiä platformilla pysymiseen.
+    private bool canJump; //Turon lisäyksiä platformilla pysymiseen.
 
     private void Awake()
     {
@@ -97,7 +97,7 @@ public class PlayerCharacterController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
         canJump = true;
         if (collision.collider.CompareTag("Platform"))
@@ -105,7 +105,7 @@ public class PlayerCharacterController : MonoBehaviour
             player.transform.parent = collision.gameObject.transform;
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.
     {
         canJump = false;
         if ( collision.collider.CompareTag("Platform"))
