@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arrow : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
     private bool hasHit;
+    private bool Airtime;
 
     public float lifetime;
 
@@ -19,15 +20,16 @@ public class Arrow : MonoBehaviour
     {
         if (hasHit == false)
         {
-           // /* - Parempi?
+            // /* - Parempi?
             float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-           // */
+            // */
 
             // original - float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x * Mathf.Rad2Deg);
             // original - transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         hasHit = true;
@@ -35,6 +37,6 @@ public class Arrow : MonoBehaviour
         rb.isKinematic = true;
 
         if (gameObject.tag == "Missile")
-            Destroy(gameObject, 5);
+            Destroy(gameObject);
     }
 }
