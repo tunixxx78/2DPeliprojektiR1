@@ -9,7 +9,7 @@ public class Stairs : MonoBehaviour
     [SerializeField] private Sprite closedAid, oppenedAid, aid2;
     [SerializeField] private float stairsLenght;
     [SerializeField] private Transform spawnPoint, stairs;
-    [SerializeField] private GameObject aid;
+    [SerializeField] private GameObject aid, obstacle;
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -20,6 +20,11 @@ public class Stairs : MonoBehaviour
             transform.localScale = new Vector3(stairsLenght, 1f, 1f);
 
             Destroy(aid);
+        }
+
+        if (collision.collider.CompareTag("Player"))
+        {
+            obstacle.transform.localScale = new Vector3(0.9f, 0.9f, 1f);
         }
     }
 
