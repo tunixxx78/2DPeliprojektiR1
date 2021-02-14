@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3750903355696927246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.14, y: -2.31, z: -0.40740946}
+  m_LocalPosition: {x: 11.14, y: -2.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3750903356739114537}
@@ -96,6 +96,7 @@ MonoBehaviour:
   visionRange: 5
   attackRange: 2
   agressiveRange: 0
+  enemyOne: {fileID: 3750903355696927243}
 --- !u!61 &3795997715319819747
 BoxCollider2D:
   m_ObjectHideFlags: 0

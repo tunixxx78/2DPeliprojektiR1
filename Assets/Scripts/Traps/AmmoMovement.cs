@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AmmoMovement : MonoBehaviour
 {
-    private Rigidbody2D ammoRb;
+    [SerializeField] private Rigidbody2D ammoRb;
     [SerializeField] private float force = 3f;
 
     private void Awake()
@@ -14,6 +14,7 @@ public class AmmoMovement : MonoBehaviour
 
     private void Update()
     {
+        
         transform.position += -transform.right * force * Time.deltaTime;
         
     }

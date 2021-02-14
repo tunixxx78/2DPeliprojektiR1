@@ -49,6 +49,7 @@ public class Crossbow : MonoBehaviour
     {
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.up * launchForce;
+
     }
     
     Vector2 PointPosition(float t) 

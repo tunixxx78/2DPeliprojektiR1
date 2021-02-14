@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9092019327654181064}
   - component: {fileID: 9092019327654181067}
   - component: {fileID: 9092019327654181066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010292053, y: 0.020593166}
+  m_Offset: {x: 0.000862658, y: 0.013059489}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40281677, y: 0.3410349}
+  m_Size: {x: 0.3891396, y: 0.3259675}
   m_EdgeRadius: 0
 --- !u!114 &9092019327654181066
 MonoBehaviour:
@@ -71,8 +71,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
-  closedAid: {fileID: 0}
-  oppenedAid: {fileID: 0}
   stairsLenght: 22
   spawnPoint: {fileID: 0}
   stairs: {fileID: 9092019327654181064}
+  aid: {fileID: 0}
+  aid2: {fileID: 0}
+  obstacle: {fileID: 0}

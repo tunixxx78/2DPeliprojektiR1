@@ -10,6 +10,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
+    [SerializeField] private GameObject player; //Turo lisäsi tämän
 
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -18,6 +19,8 @@ public class PlayerCharacterController : MonoBehaviour
     public Transform isGroundedChecker;
     public float checkGroundRadius;
     public LayerMask groundLayer;
+
+    private bool isJumping, canJump; //Turon lisäyksiä platformilla pysymiseen.
 
     private void Awake()
     {
@@ -91,6 +94,23 @@ public class PlayerCharacterController : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        canJump = true;
+        if (collision.collider.CompareTag("Platform"))
+        {
+            player.transform.parent = collision.gameObject.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        canJump = false;
+        if ( collision.collider.CompareTag("Platform"))
+        {
+            player.transform.parent = null;
         }
     }
 }

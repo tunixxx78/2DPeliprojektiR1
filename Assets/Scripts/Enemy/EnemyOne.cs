@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyOne : BaseEnemy
 {
-    [SerializeField] private Rigidbody2D enemyOne;
+    //[SerializeField] private Rigidbody2D enemyOne;
 
     protected override void Agressive()
     {
