@@ -9,6 +9,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
 
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -17,6 +18,11 @@ public class PlayerCharacterController : MonoBehaviour
     public Transform isGroundedChecker;
     public float checkGroundRadius;
     public LayerMask groundLayer;
+
+    private void Awake()
+    {
+        transform.localScale = new Vector3(1f * sizeMultiplier, 1f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
+    }
 
     void Start()
     {
@@ -42,11 +48,11 @@ public class PlayerCharacterController : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -1;
+            characterScale.x = -1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = 1;
+            characterScale.x = 1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         transform.localScale = characterScale;
     }

@@ -11,7 +11,7 @@ public abstract class baseTrap : MonoBehaviour
     [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f;
     protected float distanceOfPlayer, currentIdleTime;
     protected bool hasLineOfSight;
-    protected Transform player;
+    [SerializeField] protected Transform player;
     protected Vector2 movements;
     [SerializeField] protected GameObject ammoPrefab;
     [SerializeField] protected Transform spawnPointForTrap;
