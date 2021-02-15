@@ -10,7 +10,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
-    [SerializeField] private GameObject player; //Turo lisäsi tämän
+    [SerializeField] private GameObject player, reStart; //Turo lisäsi tämän
 
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -103,6 +103,11 @@ public class PlayerCharacterController : MonoBehaviour
         if (collision.collider.CompareTag("Platform"))
         {
             player.transform.parent = collision.gameObject.transform;
+        }
+
+        if(collision.collider.CompareTag("Dropped"))
+        {
+            player.transform.position = reStart.transform.position;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.

@@ -37,7 +37,8 @@ public abstract class baseTrap : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player (1)").transform;
+       
     }
 
     private void FixedUpdate()

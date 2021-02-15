@@ -22,10 +22,18 @@ public class Stairs : MonoBehaviour
             Destroy(aid);
             
         }
+        else
+        {
+            return;
+        }
 
         if (collision.collider.CompareTag("Player"))
         {
             obstacle.transform.localScale = new Vector3(0.9f, 0.9f, 1f);
+        }
+        else
+        {
+            return;
         }
 
         

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Crossbow : MonoBehaviour
 {
     public GameObject arrow;
-    public float launchForce;
+    public float launchForce, arrowLifeSpan = 0.5f; //Turo lisäsi arrowlifespan muuttujan.
     public Transform shotPoint;
 
     
@@ -50,11 +50,16 @@ public class Crossbow : MonoBehaviour
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.up * launchForce;
 
+        Destroy(newArrow, arrowLifeSpan);  //Turo lisännyt -> tuhoaa nuolen määritetyn ajan kuluttua.
     }
+
+    
     
     Vector2 PointPosition(float t) 
     {
         Vector2 position = (Vector2)shotPoint.position + (direction.normalized * launchForce * t) + 0.5f * Physics2D.gravity * (t * t);
         return position;
     }
+
+    
 }
