@@ -8,9 +8,8 @@ public class Stairs : MonoBehaviour
     [SerializeField] private SpriteRenderer rend;
     [SerializeField] private float stairsLenght;
     [SerializeField] private Transform spawnPoint, stairs;
-    [SerializeField] private GameObject aid, aid2, obstacle;
-    [SerializeField] private Sprite bridge;
-
+    [SerializeField] private GameObject aid, aid2, obstacle, vineBridge;
+    [SerializeField] private bool setActive;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,6 +17,7 @@ public class Stairs : MonoBehaviour
         {
             stairs.transform.position = spawnPoint.transform.position; 
             transform.localScale = new Vector3(stairsLenght, 1f, 1f);
+            vineBridge.SetActive(true);
             Destroy(aid2);
             Destroy(aid);
             
