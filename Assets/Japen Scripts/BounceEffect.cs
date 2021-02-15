@@ -5,7 +5,7 @@ using UnityEngine;
 public class BounceEffect : MonoBehaviour
 {
     [SerializeField]
-    private float jumpForce = 100f;
+    private float jumpForce = 10f;
     [SerializeField]
     private Rigidbody2D rb;
 
