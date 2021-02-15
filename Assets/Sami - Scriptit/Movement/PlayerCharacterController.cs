@@ -105,7 +105,7 @@ public class PlayerCharacterController : MonoBehaviour
             player.transform.parent = collision.gameObject.transform;
         }
 
-        if(collision.collider.CompareTag("Dropped"))
+        if(collision.collider.CompareTag("Dropped"))   //Väliaikainen Restart jos hahmo tippuu.
         {
             player.transform.position = reStart.transform.position;
         }
