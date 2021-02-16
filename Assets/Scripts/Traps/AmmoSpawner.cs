@@ -9,6 +9,7 @@ public class AmmoSpawner : MonoBehaviour
     [SerializeField] private float delayTime;
     [SerializeField] private GameObject ammoPrefab;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private float force = 1f;
 
     private void Start()
     {
@@ -28,10 +29,16 @@ public class AmmoSpawner : MonoBehaviour
 
         if (timeSinceSpawn >= timeToSpawn)
         {
+            //Shoot();
             Instantiate(ammoPrefab, spawnPoint.position, Quaternion.identity);
             timeSinceSpawn = 0f;
            
         }
         
     }
+    /*private void Shoot()
+    {
+        GameObject newAmmoPrefa = Instantiate(ammoPrefab, spawnPoint.position, Quaternion.identity);
+        newAmmoPrefa.GetComponent<Rigidbody2D>().velocity = -transform.right * force;
+    }*/
 }
