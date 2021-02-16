@@ -10,7 +10,7 @@ public class FinishLine : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            FindObjectOfType<GameManager>().Invoke("EndGame", 1f);
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
