@@ -7,7 +7,7 @@ public class Crossbow : MonoBehaviour
     public GameObject arrow;
     public float launchForce, arrowLifeSpan = 0.5f; //Turo lisäsi arrowlifespan muuttujan.
     public Transform shotPoint;
-
+    
     
     public GameObject point;
     GameObject[] points;
@@ -49,6 +49,7 @@ public class Crossbow : MonoBehaviour
     {
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.up * launchForce;
+        
 
         Destroy(newArrow, arrowLifeSpan);  //Turo lisännyt -> tuhoaa nuolen määritetyn ajan kuluttua.
     }

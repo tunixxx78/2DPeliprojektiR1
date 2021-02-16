@@ -11,11 +11,12 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        if (gameHasEnded == false)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        /*if (gameHasEnded == false)
         {
             gameHasEnded = true;
             Debug.Log("END GAME");
-        }
+        }*/
         
     }
 

@@ -39,7 +39,7 @@ public class PlayerCharacterController : MonoBehaviour
         Jump();
         BetterJump();
         CheckIfGrounded();
-        HasFallen();
+        HasFallen();                    // Turon Lisäys
 
         
     }
