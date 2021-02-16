@@ -39,6 +39,9 @@ public class PlayerCharacterController : MonoBehaviour
         Jump();
         BetterJump();
         CheckIfGrounded();
+        HasFallen();
+
+        
     }
 
     void Move()
@@ -97,6 +100,14 @@ public class PlayerCharacterController : MonoBehaviour
         }
     }
 
+    private void HasFallen()
+    {
+        if (rb.position.y < -2.5f)      //Turo lisäsi tarkistuksen onko hahmo tippunut.
+        {
+            FindObjectOfType<GameManager>().Invoke("Restart", 0.5f);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
         canJump = true;
@@ -105,10 +116,6 @@ public class PlayerCharacterController : MonoBehaviour
             player.transform.parent = collision.gameObject.transform;
         }
 
-        if(collision.collider.CompareTag("Dropped"))   //Väliaikainen Restart jos hahmo tippuu.
-        {
-            player.transform.position = reStart.transform.position;
-        }
     }
     private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.
     {
