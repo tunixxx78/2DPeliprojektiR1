@@ -77,6 +77,7 @@ public class trapUpper : baseTrap
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            ScoringSystem.theScore += 25;
             Destroy(gameObject);
             rend.sprite = null;
 

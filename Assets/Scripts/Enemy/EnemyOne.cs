@@ -64,6 +64,7 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            ScoringSystem.theScore += 35;
             Destroy(gameObject);
         }
     }
