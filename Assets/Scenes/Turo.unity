@@ -864,6 +864,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1608302635}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &61826676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61826675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22eff6593a8f8d04195ab4b72cae374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 845563763}
 --- !u!50 &61826679 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7279420443998584030, guid: d643e62f77c3b654da880e16c3c4f34a,
@@ -8625,6 +8640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8289761177999994593, guid: 21915f9ca39af6742b91b565a1e3411a,
         type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289761177999994593, guid: 21915f9ca39af6742b91b565a1e3411a,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -251
       objectReference: {fileID: 0}
@@ -8771,6 +8791,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 845563761}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &845563763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8289761177999994598, guid: 21915f9ca39af6742b91b565a1e3411a,
+    type: 3}
+  m_PrefabInstance: {fileID: 845563761}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2667617117cf71449b5a85cd7b3f6076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &849023610
 GameObject:
   m_ObjectHideFlags: 0

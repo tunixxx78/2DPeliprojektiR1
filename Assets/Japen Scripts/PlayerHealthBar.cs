@@ -19,10 +19,10 @@ public class PlayerHealthBar : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
-        }
+        }*/
     }
 
     void TakeDamage(int damage)
@@ -30,5 +30,13 @@ public class PlayerHealthBar : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            TakeDamage(20);
+        }
     }
 }
