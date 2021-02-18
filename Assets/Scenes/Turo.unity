@@ -565,6 +565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible
       objectReference: {fileID: 0}
+    - target: {fileID: 3399938174485419114, guid: e4a12519b9319cf43b2a1b3a16dccb93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 3399938174485419126, guid: e4a12519b9319cf43b2a1b3a16dccb93,
         type: 3}
       propertyPath: m_Mesh
@@ -2683,7 +2688,7 @@ PrefabInstance:
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
@@ -2703,7 +2708,7 @@ PrefabInstance:
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9936212
+      value: 0.9892399
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
@@ -2718,7 +2723,7 @@ PrefabInstance:
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.112769626
+      value: 0.14630273
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
@@ -2733,7 +2738,7 @@ PrefabInstance:
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 12.95
+      value: 16.825
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181065, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
@@ -8609,7 +8614,7 @@ Transform:
   - {fileID: 549702700}
   - {fileID: 2133646372}
   m_Father: {fileID: 1747066731}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &845563761
 PrefabInstance:
@@ -9359,7 +9364,7 @@ Transform:
   - {fileID: 399656686}
   - {fileID: 371020230}
   m_Father: {fileID: 1747066731}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939851990
 GameObject:
@@ -10064,8 +10069,8 @@ Transform:
   m_Children:
   - {fileID: 1183641765}
   - {fileID: 829549119}
-  - {fileID: 940838441}
   - {fileID: 85835267}
+  - {fileID: 940838441}
   - {fileID: 1802633136}
   - {fileID: 305333770}
   - {fileID: 1578477280}
@@ -12906,9 +12911,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432494850}
-  m_LocalRotation: {x: -0, y: -0, z: 0.19982292, w: 0.97983205}
-  m_LocalPosition: {x: -59.791725, y: -6.844221, z: 1413.043}
-  m_LocalScale: {x: 0.8864803, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13920152, w: 0.9902641}
+  m_LocalPosition: {x: -61.32, y: -6.76, z: 1413.043}
+  m_LocalScale: {x: 1.0849502, y: 1, z: 1}
   m_Children:
   - {fileID: 824176644}
   - {fileID: 1108942589}
@@ -12920,8 +12925,8 @@ Transform:
   - {fileID: 575160487}
   - {fileID: 2098110803}
   m_Father: {fileID: 1747066731}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.053001}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.003}
 --- !u!1 &1440991440
 GameObject:
   m_ObjectHideFlags: 0
@@ -14348,12 +14353,12 @@ PrefabInstance:
     - target: {fileID: 5830753226905548761, guid: 8d1357cb37da2414c9aee68bd831e02d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -183.92
+      value: -183.96
       objectReference: {fileID: 0}
     - target: {fileID: 5830753226905548761, guid: 8d1357cb37da2414c9aee68bd831e02d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -3.84
       objectReference: {fileID: 0}
     - target: {fileID: 5830753226905548761, guid: 8d1357cb37da2414c9aee68bd831e02d,
         type: 3}
@@ -16587,9 +16592,9 @@ Transform:
   m_Children:
   - {fileID: 292370134}
   - {fileID: 88226996}
+  - {fileID: 1432494851}
   - {fileID: 937319102}
   - {fileID: 833971211}
-  - {fileID: 1432494851}
   - {fileID: 858052419}
   - {fileID: 297003938}
   - {fileID: 939851991}
@@ -17221,7 +17226,7 @@ PrefabInstance:
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181064, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}

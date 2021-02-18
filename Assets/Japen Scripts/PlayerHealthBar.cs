@@ -38,5 +38,10 @@ public class PlayerHealthBar : MonoBehaviour
         {
             TakeDamage(20);
         }
+        if (collision.collider.CompareTag("Ammo"))
+        {
+            TakeDamage(40);
+        }
+        
     }
 }
