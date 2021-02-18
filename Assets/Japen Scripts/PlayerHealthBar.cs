@@ -32,16 +32,19 @@ public class PlayerHealthBar : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
+    void GainHealth(int health)
+    {
+        currentHealth += health;
+        healthBar.SetHealth(currentHealth);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (collision.collider.CompareTag("TrapAmmo"))
         {
             TakeDamage(20);
         }
-        if (collision.collider.CompareTag("Ammo"))
-        {
-            TakeDamage(40);
-        }
+       
         
     }
 }
