@@ -32,9 +32,9 @@ public class PlayerHealthBar : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    void GainHealth(int health)
+    void GainHealth(int damage)
     {
-        currentHealth += health;
+        currentHealth += damage;
         healthBar.SetHealth(currentHealth);
     }
 
