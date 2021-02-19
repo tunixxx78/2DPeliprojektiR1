@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9207696465730303745}
   m_Layer: 0
   m_Name: TrapUpper
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9207696465730303749}
     m_Modifications:
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: force
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: delayTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: ammoPrefab

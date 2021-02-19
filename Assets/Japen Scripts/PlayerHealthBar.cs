@@ -44,6 +44,15 @@ public class PlayerHealthBar : MonoBehaviour
         {
             TakeDamage(20);
         }
+        else if (collision.collider.CompareTag("Enemy"))
+        {
+            TakeDamage(20);
+        }
+        else if (collision.collider.CompareTag("Collectible"))
+        {
+            GainHealth(20);
+        }
+
        
         
     }
