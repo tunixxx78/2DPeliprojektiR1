@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5545767253177338540}
   - component: {fileID: 797955009799182339}
   - component: {fileID: 8211167316261699027}
-  m_Layer: 0
+  - component: {fileID: 8143741456378763667}
+  - component: {fileID: 6629912245473198582}
+  m_Layer: 11
   m_Name: coin_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,3 +104,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &8143741456378763667
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284482524922532951}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.315
+--- !u!114 &6629912245473198582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284482524922532951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5f829494323e34ca8126273f4ae59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
