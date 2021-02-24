@@ -48,13 +48,17 @@ public class PlayerHealthBar : MonoBehaviour
         {
             TakeDamage(20);
         }
-        else if (collision.collider.CompareTag("WoodenSpikeTrap"))
+        else if (collision.collider.CompareTag("SpikeTrap"))
         {
             TakeDamage(10);
         }
         else if (collision.collider.CompareTag("Collectible"))
         {
             GainHealth(20);
+        }
+        else
+        {
+            return;
         }
 
        
