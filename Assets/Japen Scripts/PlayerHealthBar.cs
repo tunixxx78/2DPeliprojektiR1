@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthBar : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class PlayerHealthBar : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+
+        if(currentHealth <= 0)
+        {
+            FindObjectOfType<GameManager>().ZeroHealth();
+            
+        }
     }
 
     void GainHealth(int damage)
