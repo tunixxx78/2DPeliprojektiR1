@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    [SerializeField] private GameObject restartPoint, pausePanel;
+    [SerializeField] private GameObject restartPoint;
     [SerializeField] private Transform player;
     public GameObject endFade;
 
@@ -39,15 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void TimeHasRunOut()
     {
-        pausePanel.SetActive(!pausePanel.activeSelf);
-        if(pausePanel.active)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-        }
+        SceneManager.LoadScene("RunOutOfTime");
         Debug.Log("TIME RUN OUT!!!");
     }
 
