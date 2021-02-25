@@ -12,7 +12,7 @@ public class StartScreen : MonoBehaviour
 
     public void Instructions()
     {
-        Debug.Log("INSTRUCTIONS");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void QuitGame()
