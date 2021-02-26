@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCharacterController : MonoBehaviour
 {
@@ -41,7 +42,11 @@ public class PlayerCharacterController : MonoBehaviour
         CheckIfGrounded();
         HasFallen();                    // Turon Lisäys
 
-        
+        if (Input.GetKeyDown(KeyCode.Escape))  //Turon lisäys exitille pelistä.
+        {
+            SceneManager.LoadScene("StartScreen");
+        }
+
     }
 
     void Move()

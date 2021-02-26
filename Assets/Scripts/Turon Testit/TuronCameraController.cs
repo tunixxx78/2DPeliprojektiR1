@@ -43,6 +43,9 @@ public class TuronCameraController : MonoBehaviour
     {
         Vector3 wantedPosition = GetWantedPosition(false);
 
+        LayerManager.instance.MoveableLayers(transform.position - oldPosition);
+        oldPosition = transform.position;
+
         transform.position = Vector3.SmoothDamp(transform.position, wantedPosition, ref velocity, cameraFollowSpeed);
     }
 }

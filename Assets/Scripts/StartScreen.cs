@@ -17,7 +17,6 @@ public class StartScreen : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("QUIT");
         Application.Quit();
     }
 

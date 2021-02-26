@@ -17,6 +17,6 @@ public class GameOverScreen : MonoBehaviour
 
     public void QuitGame ()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Credits");
     }
 }
