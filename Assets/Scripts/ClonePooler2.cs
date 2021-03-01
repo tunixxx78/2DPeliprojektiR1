@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ClonePooler2 : MonoBehaviour
 {
-    [SerializeField] private GameObject clonePrefab;
+    [SerializeField] public GameObject clonePrefab;
     [SerializeField] private Queue<GameObject> clonePool = new Queue<GameObject>();
     [SerializeField] private int poolSize;
 
     private void Start()
     {
+        clonePrefab.name = "CloneCharacterPrefab";
+
         for (int i = 0; i < poolSize; i++)
         {
             GameObject clone = Instantiate(clonePrefab);

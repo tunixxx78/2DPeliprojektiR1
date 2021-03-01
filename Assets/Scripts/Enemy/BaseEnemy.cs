@@ -37,7 +37,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("PlayerTuro").transform;
     }
 
     private void FixedUpdate()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyOne : BaseEnemy
 {
-    [SerializeField] private Rigidbody2D enemyOne;
+    //[SerializeField] private Rigidbody2D enemyOne;
 
     protected override void Agressive()
     {
@@ -64,6 +64,7 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            ScoringSystem.theScore += 35;
             Destroy(gameObject);
         }
     }

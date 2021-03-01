@@ -5,23 +5,48 @@ using UnityEngine;
 public class Shortcut : MonoBehaviour
 {
     [SerializeField] private Transform spawnPointShortcut;
-    [SerializeField] private GameObject player, cloneCharacter;
+    [SerializeField] private Transform player, cloneCharacter;
 
-    private void Start()
-    {
-        
-    }
+    private bool cloneCharacterIsOverlaping = false;
+    private bool PlayerIsOverLaping = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.CompareTag("CloneCharacter"))
-            {
+        if (cloneCharacterIsOverlaping)
+        {
             cloneCharacter.transform.position = spawnPointShortcut.transform.position;
-            }
-        if (collision.CompareTag("Player"))
+        }
+        if (PlayerIsOverLaping)
         {
             player.transform.position = spawnPointShortcut.transform.position;
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+            {
+            cloneCharacterIsOverlaping = true;
+            }
+        if (other.tag == "Player")
+        {
+            PlayerIsOverLaping = true;
+        }
+        /*if (collision.CompareTag("Ammo"))
+        {
+            player.transform.position = spawnPointShortcut.transform.position;
+        }*/
+
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "CloneCharacter")
+        {
+            cloneCharacterIsOverlaping = false;
+        }
+        if (other.tag == "Player")
+        {
+            PlayerIsOverLaping = false;
+        }
     }
 }

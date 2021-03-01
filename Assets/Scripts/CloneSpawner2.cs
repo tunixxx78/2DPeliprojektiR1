@@ -12,6 +12,7 @@ public class CloneSpawner2 : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartSpawning());
+        
     }
 
     private IEnumerator StartSpawning()
@@ -31,6 +32,7 @@ public class CloneSpawner2 : MonoBehaviour
             if (newClone != null)
             {
                 newClone.transform.position = this.transform.position;
+                //newClone.name = "CloneCharacterPrefab";
                 timeSinceSpawn = 0f;
             }
         }

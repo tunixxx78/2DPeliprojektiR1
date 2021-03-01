@@ -64,13 +64,20 @@ public class trapUpper : baseTrap
 
     protected override void Die()
     {
-        
+        Death();
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+        rend.sprite = null;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            ScoringSystem.theScore += 25;
             Destroy(gameObject);
             rend.sprite = null;
 

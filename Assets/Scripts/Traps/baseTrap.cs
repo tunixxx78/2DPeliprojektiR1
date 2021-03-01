@@ -11,7 +11,7 @@ public abstract class baseTrap : MonoBehaviour
     [SerializeField] protected float trapSize, visionRange, moveRange, attackRange, maxIdleTime = 0f;
     protected float distanceOfPlayer, currentIdleTime;
     protected bool hasLineOfSight;
-    protected Transform player;
+    [SerializeField] protected Transform player;
     protected Vector2 movements;
     [SerializeField] protected GameObject ammoPrefab;
     [SerializeField] protected Transform spawnPointForTrap;
@@ -37,7 +37,8 @@ public abstract class baseTrap : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("PlayerTuro").transform;
+       
     }
 
     private void FixedUpdate()
@@ -49,14 +50,6 @@ public abstract class baseTrap : MonoBehaviour
     {
         currentStateMethod();
         CheckLineOfSight();
-
-        //timeSinceSpawn += Time.deltaTime;
-
-        /*if (timeSinceSpawn >= timeToSpawn && trapState == State.Attack)
-        {
-            Instantiate(ammoPrefab, spawnPointForTrap.position, Quaternion.identity);
-            Destroy(gameObject, 3f);
-        }*/
     }
 
     

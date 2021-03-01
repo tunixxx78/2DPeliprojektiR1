@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCharacterController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerCharacterController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
+    [SerializeField] private GameObject player, reStart; //Turo lisäsi tämän
 
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -17,6 +20,13 @@ public class PlayerCharacterController : MonoBehaviour
     public Transform isGroundedChecker;
     public float checkGroundRadius;
     public LayerMask groundLayer;
+
+    private bool canJump; //Turon lisäyksiä platformilla pysymiseen.
+
+    private void Awake()
+    {
+        transform.localScale = new Vector3(1f * sizeMultiplier, 1f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
+    }
 
     void Start()
     {
@@ -30,6 +40,13 @@ public class PlayerCharacterController : MonoBehaviour
         Jump();
         BetterJump();
         CheckIfGrounded();
+        HasFallen();                    // Turon Lisäys
+
+        if (Input.GetKeyDown(KeyCode.Escape))  //Turon lisäys exitille pelistä.
+        {
+            SceneManager.LoadScene("StartScreen");
+        }
+
     }
 
     void Move()
@@ -42,11 +59,11 @@ public class PlayerCharacterController : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -1;
+            characterScale.x = -1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = 1;
+            characterScale.x = 1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         transform.localScale = characterScale;
     }
@@ -56,6 +73,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
         }
     }
 
@@ -85,6 +103,32 @@ public class PlayerCharacterController : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    private void HasFallen()
+    {
+        if (rb.position.y < -2.5f)      //Turo lisäsi tarkistuksen onko hahmo tippunut.
+        {
+            FindObjectOfType<GameManager>().Invoke("Restart", 0.5f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
+    {
+        canJump = true;
+        if (collision.collider.CompareTag("Platform"))
+        {
+            player.transform.parent = collision.gameObject.transform;
+        }
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.
+    {
+        canJump = false;
+        if ( collision.collider.CompareTag("Platform"))
+        {
+            player.transform.parent = null;
         }
     }
 }

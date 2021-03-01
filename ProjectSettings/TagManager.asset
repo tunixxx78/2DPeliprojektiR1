@@ -13,8 +13,12 @@ TagManager:
   - Shortcut
   - CloneCharacter
   - Ammo
+  - TrapAmmo
   - Missile
-  - Trap_Pendulum
+  - Ground
+  - Collectible
+  - Tramp
+  - SpikeTrap
   layers:
   - Default
   - TransparentFX
@@ -27,11 +31,11 @@ TagManager:
   - Ground
   - GroundLevel
   - Ladder
+  - Collectible
   - Player
-  - Arrow
-  - Trap
-  - Platform
-  - Falling
+  - Tramp
+  - 
+  - 
   - 
   - 
   - 
@@ -51,4 +55,31 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 1523423459
+    locked: 0
+  - name: Tree1
+    uniqueID: 229378763
+    locked: 0
+  - name: Tree2
+    uniqueID: 343094369
+    locked: 0
+  - name: Tree3
+    uniqueID: 2174400341
+    locked: 0
+  - name: Vines
+    uniqueID: 642412811
+    locked: 0
+  - name: Rocks/Leeves
+    uniqueID: 822926547
+    locked: 0
+  - name: GameObjects
+    uniqueID: 3225909043
+    locked: 0
+  - name: Player
+    uniqueID: 2822596845
+    locked: 0
+  - name: FrontObjects
+    uniqueID: 3057137617
     locked: 0
