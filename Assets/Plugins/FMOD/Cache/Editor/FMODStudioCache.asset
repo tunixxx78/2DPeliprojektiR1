@@ -46,6 +46,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 743
+--- !u!114 &-6594541765000879451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial
+  guid: 9f0eadfde020fb42a0dfdda37346a800
+  Banks:
+  - {fileID: 1401848451641241941}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-1249528437152896305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,11 +107,11 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637492578900000000
+  lastModified: 637502916110000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 824
+    Value: 904
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -109,12 +132,14 @@ MonoBehaviour:
   - {fileID: -7640495229226445745}
   - {fileID: -7886972876404258998}
   - {fileID: -1249528437152896305}
+  - {fileID: 5221340422166287544}
+  - {fileID: -6594541765000879451}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1401848451641241941}
   StringsBanks:
   - {fileID: -841418764957404091}
-  stringsBankWriteTime: 637492578900000000
+  stringsBankWriteTime: 637502916110000000
   cacheVersion: 6
 --- !u!114 &1401848451641241941
 MonoBehaviour:
@@ -131,7 +156,30 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637492578900000000
+  lastModified: 637502916110000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &5221340422166287544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/IntroMusic
+  m_EditorClassIdentifier: 
+  Path: event:/IntroMusic
+  guid: 15cd7be789f5ea4895dbc2a6e7842c34
+  Banks:
+  - {fileID: 1401848451641241941}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27000
