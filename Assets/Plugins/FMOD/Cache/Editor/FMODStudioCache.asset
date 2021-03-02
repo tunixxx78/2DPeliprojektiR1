@@ -107,11 +107,11 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637502916110000000
+  lastModified: 637502926240000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 904
+    Value: 948
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -134,12 +134,13 @@ MonoBehaviour:
   - {fileID: -1249528437152896305}
   - {fileID: 5221340422166287544}
   - {fileID: -6594541765000879451}
+  - {fileID: 6949500346684739309}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1401848451641241941}
   StringsBanks:
   - {fileID: -841418764957404091}
-  stringsBankWriteTime: 637502916110000000
+  stringsBankWriteTime: 637502926240000000
   cacheVersion: 6
 --- !u!114 &1401848451641241941
 MonoBehaviour:
@@ -156,7 +157,7 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637502916110000000
+  lastModified: 637502926240000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -183,3 +184,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 27000
+--- !u!114 &6949500346684739309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StartCredits
+  m_EditorClassIdentifier: 
+  Path: event:/StartCredits
+  guid: 2fceecbaddfc9045a513a893ec72aa2a
+  Banks:
+  - {fileID: 1401848451641241941}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48917
