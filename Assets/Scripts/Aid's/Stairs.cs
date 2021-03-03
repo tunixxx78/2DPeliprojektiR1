@@ -29,7 +29,7 @@ public class Stairs : MonoBehaviour
 
         if (collision.collider.CompareTag("Player"))
         {
-            obstacle.transform.localScale = new Vector3(0.9f, 0.9f, 1f);
+            obstacle.transform.localScale = new Vector3(0.4f, 0.4f, 1f);
         }
         else
         {
