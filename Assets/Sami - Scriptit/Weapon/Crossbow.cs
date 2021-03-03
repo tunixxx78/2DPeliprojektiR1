@@ -37,7 +37,10 @@ public class Crossbow : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
             Shoot();
+
         }
         for (int i = 0; i < numberOfPoints; i++)
         {
@@ -49,8 +52,6 @@ public class Crossbow : MonoBehaviour
     {
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.up * launchForce;
-        
-
         Destroy(newArrow, arrowLifeSpan);  //Turo lisännyt -> tuhoaa nuolen määritetyn ajan kuluttua.
     }
 

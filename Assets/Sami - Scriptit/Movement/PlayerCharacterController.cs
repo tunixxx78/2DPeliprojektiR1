@@ -46,6 +46,10 @@ public class PlayerCharacterController : MonoBehaviour
         {
             SceneManager.LoadScene("StartScreen");
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
+        }
 
     }
 
@@ -73,7 +77,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Jump", GetComponent<Transform>().position);
         }
     }
 
