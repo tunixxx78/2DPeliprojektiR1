@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class FadeMusic : MonoBehaviour
 {
-   
+    private FMOD.Studio.EventInstance music;
+    [FMODUnity.BankRef] public string musicEvent;
+
+    [SerializeField] [Range(0f, 1f)] private float state;
 
     private void Start()
     {
-       FMODUnity.RuntimeManager.CreateInstance("event:/Music");
+        music = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
+        music.start();
         
     }
 
@@ -16,19 +20,11 @@ public class FadeMusic : MonoBehaviour
     {
         if(collision.CompareTag("EndZone"))
         {
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("endFade", 1f);
+            music.setParameterByName("endFade", 1f);
             Debug.Log("OSUMA");
         }
         
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("EndZone"))
-        {
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("endFade", 0f);
-            Debug.Log("POISTUI");
-        }
-       
-    }
+   
 }

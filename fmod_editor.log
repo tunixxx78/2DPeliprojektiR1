@@ -6,86 +6,138 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fa0fdb60008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fa11968e808 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6540864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16928
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000ec14954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1550847fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1550848b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1550848de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x155084982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fa1294976b8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='308-Bolt-Action-Rifle-Suppressed-Single-Far-Gunshot-A-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=45216, lengthpcm=178560, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6540864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 16928
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000ec14954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1550847fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1550848b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1550848de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x155084982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fa1294c8968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Jump2-Gravel25', format=5, channels=2, frequency=48000, lengthbytes=8576, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.232788.
 [LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fa0fd5180a8 : node = 0x7fa119cb6330
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11b26cd58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa0fd5180a8
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa129d925c8 : node = 0x7fa129d92780
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11c092048.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa129d925c8
 [LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 6540864
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16928
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa119cb6440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa129d92890
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa0fd5180a8
-[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa0ffeeb448)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11b263d18)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11b25b6a8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa129d925c8
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11c261f08)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa0fd7e6a78)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa0ffcdd9a8)
 [LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fa119ca2698 : node = 0x7fa0ef6bffc0
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11b26cd58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa119ca2698
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa12a7f3ca8 : node = 0x7fa12a7f10e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11c092048.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa12a7f3ca8
 [LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 6540864
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16928
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa0ef6c00d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa12a7f11f0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 160000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa12a7f3ca8
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa129d925c8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa129f44fd8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa129f45168)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fa0feed8858 : node = 0x7fa0fec471e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11c092048.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa0feed8858
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6540864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16928
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa0fec472f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fa0fee45998 : node = 0x7fa0fecedf20
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fa11c092048.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa0feed8858
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa0fee45998
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6540864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16928
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa0fecee030
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 32077
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2Dpeliprojekti - 18.2.2021, 12.48', format=5, channels=2, frequency=48000, lengthbytes=2944832, lengthpcm=11621183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234892.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa119ca2698
-[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa11b2ef768)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0efbd3b58)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa11b2efe08)
-[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa119ca2698)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa11b4b07a8)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa11b474f78)
-[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fa11b48c488 : node = 0x7fa11b460750
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fa11b26cd58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fa11b48c488
-[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6540864
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fa11b460860
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa11b48c488
-[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa0fd5180a8)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11b475788)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11b4b0ea8)
-[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa11b2b0828)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0efbd1cd8)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0ffbeb008)
-[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa11b48c488)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa119ce7388)
-[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa12f96bd28)
-[LOG] SoundI::release                          :  (0x7fa1198774c8)
-[LOG] SoundI::release                          :     lioncub (0x7fa119876108)
-[LOG] SoundI::release                          :  (0x7fa119878898)
-[LOG] SoundI::release                          :     Chewing-food-with-mouth-open-med-speed-www.fesliyanstudios.com (0x7fa119878048)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fa0fee45998
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa12820fc78)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0fd718958)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0ffc53f48)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa12a7f3ca8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa12aa83e38)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa12aa83fc8)
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa0fee45998)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa129554a88)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fa12b094588)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa0feed8858)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa129553138)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fa12b0c6a08)
+[LOG] SoundI::release                          :  (0x7fa129497ca8)
+[LOG] SoundI::release                          :     308-Bolt-Action-Rifle-Suppressed-Single-Far-Gunshot-A-www.fesliyanstudios.com (0x7fa129497f78)
+[LOG] SoundI::release                          :  (0x7fa128b8bf38)
+[LOG] SoundI::release                          :     Jump2-Gravel25 (0x7fa128b923e8)
+[LOG] SoundI::release                          :  (0x7fa128cf9c88)
+[LOG] SoundI::release                          :     lioncub (0x7fa11fcc51f8)
+[LOG] SoundI::release                          :  (0x7fa128c3a068)
+[LOG] SoundI::release                          :     Chewing-food-with-mouth-open-med-speed-www.fesliyanstudios.com (0x7fa11fcb0a88)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -96,12 +148,3 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
