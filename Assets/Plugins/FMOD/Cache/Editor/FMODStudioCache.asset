@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8997752938602882902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy
+  guid: 92aeecbf25e77940b36ae1f00dadc78d
+  Banks:
+  - {fileID: 1401848451641241941}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 1824
 --- !u!114 &-7886972876404258998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +92,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12000
+--- !u!114 &-5980336490938166780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Shoot
+  guid: c87331287d547a4797e3cb3058fa3c7c
+  Banks:
+  - {fileID: 1401848451641241941}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &-1249528437152896305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,11 +153,11 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637502926240000000
+  lastModified: 637503658510000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 948
+    Value: 1030
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -135,12 +181,14 @@ MonoBehaviour:
   - {fileID: 5221340422166287544}
   - {fileID: -6594541765000879451}
   - {fileID: 6949500346684739309}
+  - {fileID: -5980336490938166780}
+  - {fileID: -8997752938602882902}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1401848451641241941}
   StringsBanks:
   - {fileID: -841418764957404091}
-  stringsBankWriteTime: 637502926240000000
+  stringsBankWriteTime: 637503658510000000
   cacheVersion: 6
 --- !u!114 &1401848451641241941
 MonoBehaviour:
@@ -157,7 +205,7 @@ MonoBehaviour:
   Path: ../Desktop/testii/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637502926240000000
+  lastModified: 637503658510000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
