@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCharacterController : MonoBehaviour
 {
+    
     Rigidbody2D rb;
     public float speed;
     public float jumpForce;
@@ -31,6 +32,7 @@ public class PlayerCharacterController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     
@@ -117,6 +119,7 @@ public class PlayerCharacterController : MonoBehaviour
             FindObjectOfType<GameManager>().Invoke("Restart", 0.5f);
         }
     }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
@@ -125,6 +128,7 @@ public class PlayerCharacterController : MonoBehaviour
         {
             player.transform.parent = collision.gameObject.transform;
         }
+       
 
     }
     private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.
