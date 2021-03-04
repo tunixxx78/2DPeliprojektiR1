@@ -13,6 +13,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     //[SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
     [SerializeField] private GameObject player, reStart; //Turo lisäsi tämän
+    
 
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -119,24 +120,27 @@ public class PlayerCharacterController : MonoBehaviour
             FindObjectOfType<GameManager>().Invoke("Restart", 0.5f);
         }
     }
-    
+
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
         canJump = true;
         if (collision.collider.CompareTag("Platform"))
         {
-            player.transform.parent = collision.gameObject.transform;
-        }
-       
+            var emptyObject = new GameObject();
+            emptyObject.transform.parent = collision.gameObject.transform;  //luodaan tyhjä child objecti platformille ja tehdään pelaajasta tyhjän objektin
+            player.transform.parent = emptyObject.transform;                //childi jolloin pelaaja perii välittömän vanhemman koon eikä platformin kokoa
+        }                                                                   //fixi scale bugille kun hyppäsi liikkuvalle platformille. Japen Liäsys
+
 
     }
     private void OnCollisionExit2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla -> muuttaa tilanteen normaaliksi poistumisen jälkeen.
     {
         canJump = false;
-        if ( collision.collider.CompareTag("Platform"))
+        if (collision.collider.CompareTag("Platform"))
         {
             player.transform.parent = null;
+            
         }
     }
 }
