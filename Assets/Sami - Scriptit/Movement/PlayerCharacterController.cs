@@ -65,7 +65,7 @@ public class PlayerCharacterController : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            characterScale.x = -1f  * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
