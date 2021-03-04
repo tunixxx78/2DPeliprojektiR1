@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9112142022107942027}
   - component: {fileID: 9112142022107942020}
   - component: {fileID: 9112142022107942024}
-  - component: {fileID: -5916092138873391505}
+  - component: {fileID: 6817107650182432828}
   m_Layer: 0
   m_Name: CloneCharacterPrefab
   m_TagString: CloneCharacter
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 9112142022107942020}
   speed: 5
---- !u!114 &-5916092138873391505
+--- !u!114 &6817107650182432828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,5 +148,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430e012923309fc469e8021179809dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 11
   rb: {fileID: 9112142022107942020}
