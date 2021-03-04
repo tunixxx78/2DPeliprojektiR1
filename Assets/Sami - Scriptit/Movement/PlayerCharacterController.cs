@@ -11,7 +11,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
-    [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
+    //[SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
     [SerializeField] private GameObject player, reStart; //Turo lisäsi tämän
 
     public float rememberGroundedFor;
@@ -26,7 +26,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void Awake()
     {
-        transform.localScale = new Vector3(1f * sizeMultiplier, 1f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
+        //transform.localScale = new Vector3(1f * sizeMultiplier, 1f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
     }
 
     void Start()
@@ -48,7 +48,7 @@ public class PlayerCharacterController : MonoBehaviour
         {
             SceneManager.LoadScene("StartScreen");
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) //Turon lisäys ampuma äänelle.
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
         }
@@ -65,11 +65,11 @@ public class PlayerCharacterController : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            characterScale.x = -1f;  //* sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = 1f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            characterScale.x = 1f; //* sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         transform.localScale = characterScale;
     }
