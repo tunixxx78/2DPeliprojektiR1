@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TuronCameraController : MonoBehaviour
 {
-    [SerializeField] private Transform player;
+    [SerializeField] private Transform player, cloneChar;
     [SerializeField]
     [Range(0.01f, 1f)]
     private float cameraFollowSpeed;
@@ -36,6 +36,14 @@ public class TuronCameraController : MonoBehaviour
         {
             y = cameraY;
         }*/
+        return new Vector3(x, y, -10f);
+    }
+
+    public Vector3 GetWantedPosition2(bool followY = true)
+    {
+        float x = Mathf.Clamp(cloneChar.position.x + offset.x, minX, maxX);
+        float y = Mathf.Clamp(cloneChar.position.y + offset.y, minY, maxY);
+
         return new Vector3(x, y, -10f);
     }
 

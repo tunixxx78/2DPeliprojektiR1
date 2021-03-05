@@ -16,7 +16,6 @@ public class BounceEffect : MonoBehaviour
         if (collision.gameObject.CompareTag("Tramp"))
         {
             rb.velocity = Vector2.up * jumpForce;
-            Debug.Log("Collided");
         }
     }
 }
