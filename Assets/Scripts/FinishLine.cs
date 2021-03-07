@@ -10,9 +10,14 @@ public class FinishLine : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.CompareTag("CloneCharacterLast"))
+        {
+            ScoringSystem.theScore += 100;
+            FindObjectOfType<GameManager>().EndGame();
+        }
         if(collision.CompareTag("CloneCharacter"))
         {
-            FindObjectOfType<GameManager>().EndGame();
+            ScoringSystem.theScore += 100;
         }
     }
 }

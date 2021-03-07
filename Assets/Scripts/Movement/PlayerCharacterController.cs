@@ -11,8 +11,9 @@ public class PlayerCharacterController : MonoBehaviour
     public float jumpForce;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
-    //[SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
-    [SerializeField] private GameObject player, reStart; //Turo lisäsi tämän
+    [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
+    [SerializeField] private GameObject player, reStart; //Turo lisäsi
+    [SerializeField] private Animator animator;
     
 
     public float rememberGroundedFor;
@@ -23,11 +24,12 @@ public class PlayerCharacterController : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
 
+
     private bool canJump; //Turon lisäyksiä platformilla pysymiseen.
 
     private void Awake()
     {
-        //transform.localScale = new Vector3(1f * sizeMultiplier, 1f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
+        transform.localScale = new Vector3(0.15f * sizeMultiplier, 0.15f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
     }
 
     void Start()
@@ -45,6 +47,8 @@ public class PlayerCharacterController : MonoBehaviour
         CheckIfGrounded();
         HasFallen();                    // Turon Lisäys
 
+
+
         if (Input.GetKeyDown(KeyCode.Escape))  //Turon lisäys exitille pelistä.
         {
             SceneManager.LoadScene("StartScreen");
@@ -52,7 +56,9 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) //Turon lisäys ampuma äänelle.
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
+            animator.SetTrigger("Attack");
         }
+        
 
     }
 
@@ -62,15 +68,17 @@ public class PlayerCharacterController : MonoBehaviour
         float moveBy = x * speed;
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
 
+        animator.SetBool("runAnim", x != 0f);
+
         //flip character
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -1f;  //* sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            characterScale.x = 0.15f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = 1f; //* sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            characterScale.x = -0.15f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
         }
         transform.localScale = characterScale;
     }
@@ -80,7 +88,12 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            animator.SetBool("InAir", true);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Jump", GetComponent<Transform>().position);
+        }
+        else
+        {
+            animator.SetBool("InAir", false);
         }
     }
 
@@ -90,6 +103,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (colliders != null)
         {
             isGrounded = true;
+            
         }
         else
         {

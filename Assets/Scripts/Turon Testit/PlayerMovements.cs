@@ -10,6 +10,9 @@ public class PlayerMovements : MonoBehaviour
     private float xMovements;
     private Rigidbody2D rbchar;
     private bool isJumping, canJump;
+    public Animator animator;
+    bool IsAnim = false;
+
 
     private void Awake()
     {
@@ -34,8 +37,9 @@ public class PlayerMovements : MonoBehaviour
 
         if (xMovements != 0f)
         {
-            transform.localScale = new Vector3(0.4f * xMovements, 0.4f, 1f);
+            transform.localScale = new Vector3(1f * xMovements, 1f, 1f);
         }
+        animator.SetBool("runAnim", xMovements != 0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
