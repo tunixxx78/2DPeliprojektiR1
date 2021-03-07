@@ -85,6 +85,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     void Jump()
     {
+        if (Input.GetKey(KeyCode.Space))
+        { 
+            animator.SetBool("InAir", true);
+        }
+        
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -93,7 +98,8 @@ public class PlayerCharacterController : MonoBehaviour
         }
         else
         {
-            animator.SetBool("InAir", false);
+            //animator.SetBool("InAir", false);
+            
         }
     }
 
@@ -103,6 +109,8 @@ public class PlayerCharacterController : MonoBehaviour
         if (colliders != null)
         {
             isGrounded = true;
+            animator.SetBool("InAir", false);
+            
             
         }
         else
@@ -112,6 +120,7 @@ public class PlayerCharacterController : MonoBehaviour
                 lastTimeGrounded = Time.time;
             }
             isGrounded = false;
+            animator.SetBool("runAnim", false);
         }
     }
 
