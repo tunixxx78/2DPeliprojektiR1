@@ -17,7 +17,7 @@ public class Stairs : MonoBehaviour
         {
             stairs.transform.position = spawnPoint.transform.position; 
             transform.localScale = new Vector3(stairsLenght, 1f, 1f);
-            vineBridge.SetActive(true);
+            //vineBridge.SetActive(true);
             Destroy(aid2);
             Destroy(aid);
             
