@@ -37,7 +37,7 @@ public abstract class baseTrap : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("PlayerTuro").transform;
+        player = GameObject.Find("HoodedMageFinalPrefab").transform;
        
     }
 

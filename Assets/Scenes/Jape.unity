@@ -10317,6 +10317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloneCharacterPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 9112142022107942024, guid: da7ba148d71784bbc8df3ecf7f3ecd5a,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9112142022107942025, guid: da7ba148d71784bbc8df3ecf7f3ecd5a,
         type: 3}
       propertyPath: m_RootOrder
@@ -13584,11 +13589,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -6.471993, y: 2.0020351}
-  - {x: 5.948191, y: 2.004727}
+  - {x: -6.841993, y: 2.0019855}
+  - {x: 6.1181917, y: 2.0047731}
   - {x: -5.868464, y: 2.000606}
   - {x: -6.3137507, y: 2.0005093}
-  - {x: -6.471993, y: 2.0020351}
+  - {x: -6.841993, y: 2.0019855}
 --- !u!114 &1611369325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13699,7 +13704,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 1258253105144047925, guid: c307807d9b3d7408b84753b3b45558c3, type: 3}
+  - {fileID: 7268256127927074944, guid: 1988ff3e005304fe9a8ae8b8d52668ab, type: 3}
   - {fileID: -7901303654434279344, guid: c307807d9b3d7408b84753b3b45558c3, type: 3}
   - {fileID: 4757939008410906957, guid: c307807d9b3d7408b84753b3b45558c3, type: 3}
   - {fileID: 0}
@@ -13709,8 +13714,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.26163054, y: 1.3915833, z: -0.00014999999}
-    m_Extent: {x: 6.2104473, y: 1.3915833, z: 0.00014999999}
+    m_Center: {x: -0.36164618, y: 1.3691514, z: -0.00014999999}
+    m_Extent: {x: 6.480427, y: 1.3691514, z: 0.00014999999}
 --- !u!1 &1621484420
 GameObject:
   m_ObjectHideFlags: 0
