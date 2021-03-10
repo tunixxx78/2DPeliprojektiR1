@@ -39,9 +39,9 @@ public class PlayerHealthBar : MonoBehaviour
         }
     }
 
-    void GainHealth(int damage)
+    void GainHealth(int healing)
     {
-        currentHealth += damage;
+        currentHealth += healing;
         healthBar.SetHealth(currentHealth);
     }
 
@@ -49,7 +49,7 @@ public class PlayerHealthBar : MonoBehaviour
     {
         if (collision.collider.CompareTag("TrapAmmo"))
         {
-            TakeDamage(20);
+            TakeDamage(10);
         }
         else if (collision.collider.CompareTag("Enemy"))
         {
