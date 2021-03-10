@@ -32,7 +32,7 @@ public class AmmoMovement : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject, 3f);
+            Destroy(gameObject, 5f);
         }
     }
 

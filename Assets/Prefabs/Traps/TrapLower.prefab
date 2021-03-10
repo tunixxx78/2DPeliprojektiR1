@@ -89,9 +89,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapSize: 5
-  visionRange: 10
-  moveRange: 7
-  attackRange: 5
+  visionRange: 25
+  moveRange: 23
+  attackRange: 20
   maxIdleTime: 100
   player: {fileID: 0}
   ammoPrefab: {fileID: 7373833731915227499, guid: f1e21cbe107104ff6894343cf3332821,
@@ -159,17 +159,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4313884936397753947}
     m_Modifications:
-    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
-        type: 3}
-      propertyPath: ammoPrefab
-      value: 
-      objectReference: {fileID: 7373833731915227499, guid: f1e21cbe107104ff6894343cf3332821,
-        type: 3}
-    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 5980642009014091162}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_RootOrder
