@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7373833731915227502}
   - component: {fileID: 7280617772855000294}
   m_Layer: 16
-  m_Name: TrapAmmoPrefab 1
+  m_Name: TrapAmmoPrefabLower
   m_TagString: TrapAmmo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a2d47c705d448edb8a826432b23aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoRb: {fileID: 0}
+  ammoRb: {fileID: 7280617772855000294}
   force: 5
 --- !u!58 &7373833731915227502
 CircleCollider2D:

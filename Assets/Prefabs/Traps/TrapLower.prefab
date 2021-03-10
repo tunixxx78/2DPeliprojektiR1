@@ -94,7 +94,7 @@ MonoBehaviour:
   attackRange: 20
   maxIdleTime: 100
   player: {fileID: 0}
-  ammoPrefab: {fileID: 7373833731915227499, guid: 228caba58b58045b1ad8d1475c845a5a,
+  ammoPrefab: {fileID: 7373833731915227499, guid: 06739a4b4daa74223975fb341f15aa54,
     type: 3}
   spawnPointForTrap: {fileID: 5980642009014091162}
   rend: {fileID: 0}
@@ -159,6 +159,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4313884936397753947}
     m_Modifications:
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: force
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: delayTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271716872422990, guid: b8086d4a1f3e740be9fc8bee4266595a,
+        type: 3}
+      propertyPath: ammoPrefab
+      value: 
+      objectReference: {fileID: 7373833731915227499, guid: 06739a4b4daa74223975fb341f15aa54,
+        type: 3}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_RootOrder
