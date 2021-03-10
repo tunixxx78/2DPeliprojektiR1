@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
-    public float speed;
+    public float speed, deathSpeed;
     public float distance;
     public Rigidbody2D enemyDummy;
+    public GameObject deathParticle;
+    
 
     private bool movingRight = true;
 
     public Transform groundDetection;
+    public Animator animator;
 
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
+        animator.SetBool("isMoving", true);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
         if(groundInfo.collider == false)
@@ -37,7 +41,10 @@ public class Patrol : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ammo"))
         {
-            Destroy(gameObject);
+           
+            Destroy(gameObject, 1f);
+            animator.SetTrigger("death");
+            Instantiate(deathParticle, transform.position, transform.rotation);
         }
     }
 }

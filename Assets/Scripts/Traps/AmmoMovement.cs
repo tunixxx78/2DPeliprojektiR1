@@ -25,6 +25,14 @@ public class AmmoMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.collider.CompareTag("Platform"))
+        {
+            Destroy(gameObject);
+        }
+        if (collision.collider.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
 
         if (collision.collider.CompareTag("CloneCharacter"))
         {

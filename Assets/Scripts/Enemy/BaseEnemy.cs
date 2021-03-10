@@ -18,7 +18,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
     private State enemyState = State.Idle;
     protected Rigidbody2D rbe;
-    protected Animator animator;
+    [SerializeField] protected Animator animator;
     private Action currentStateMethod;
 
     protected enum State

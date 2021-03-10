@@ -6,11 +6,13 @@ public class EnemyOne : BaseEnemy
 {
     //[SerializeField] private Rigidbody2D enemyOne;
 
+    
     protected override void Agressive()
     {
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Agressive);
+            animator.SetBool("isMoving", true);
         }
 
         float direction = Mathf.Sign(player.transform.position.x - transform.position.x);
@@ -21,6 +23,7 @@ public class EnemyOne : BaseEnemy
         if (distanceOfPlayer >= attackRange)
         {
             ChangeState(State.Idle);
+            animator.SetBool("isMoving", false);
         }
 
 
@@ -29,12 +32,14 @@ public class EnemyOne : BaseEnemy
     protected override void Patrol()
     {
         movements = new Vector2(transform.localScale.x * moveSpeed, rbe.velocity.y);
+        animator.SetBool("isMoving", true);
 
         currentPatrolTime += Time.deltaTime;
 
         if(currentPatrolTime >= maxPatrolTime)
         {
             currentPatrolTime = 0f;
+            animator.SetBool("isMoving", false);
             ChangeState(State.Idle);
 
         }
@@ -42,7 +47,7 @@ public class EnemyOne : BaseEnemy
 
     protected override void Death()
     {
-        
+       
     }
 
     protected override void Idle()
@@ -64,8 +69,11 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            movements = new Vector2(0f, rbe.velocity.y);
             ScoringSystem.theScore += 35;
-            Destroy(gameObject);
+            animator.SetTrigger("death");
+            Destroy(gameObject, 0.8f);
         }
     }
+    
 }
