@@ -6192,13 +6192,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389292779}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134.04, y: -11.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999994, w: 0.0011282925}
+  m_LocalPosition: {x: 134.02, y: -8.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1672462414}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.64001}
 --- !u!114 &389292781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,10 +6224,10 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 102.33
-  m_PointLightOuterAngle: 102.33
-  m_PointLightInnerRadius: 2.72
-  m_PointLightOuterRadius: 3.19
+  m_PointLightInnerAngle: 15.37
+  m_PointLightOuterAngle: 15.37
+  m_PointLightInnerRadius: 1.6042387
+  m_PointLightOuterRadius: 1.6049653
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -17936,6 +17936,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050222893}
     m_Modifications:
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: force
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: delayTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: timeToSpawn
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4313884936397753942, guid: 9e6040181dd52400fbe2aa3544423049,
         type: 3}
       propertyPath: m_Name
@@ -17951,6 +17966,21 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 659667705}
+    - target: {fileID: 4313884936397753944, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: moveRange
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313884936397753944, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: attackRange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313884936397753944, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: visionRange
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4313884936397753946, guid: 9e6040181dd52400fbe2aa3544423049,
         type: 3}
       propertyPath: m_Controller

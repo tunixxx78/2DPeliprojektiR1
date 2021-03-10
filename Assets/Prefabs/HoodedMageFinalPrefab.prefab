@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209078394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2, y: 22.4, z: 0}
+  m_LocalPosition: {x: -5.9, y: 13.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4767487993707497662}
@@ -80,25 +80,6 @@ MonoBehaviour:
   point: {fileID: 1104907012259394275, guid: a1e125792e9ee4243996603673cac275, type: 3}
   numberOfPoints: 0
   spaceBeetweenPoints: 0
---- !u!95 &1519361277
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6551523573868072904}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a0bab6dedbad244ebac42f5743f040f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &659667704
 Rigidbody2D:
   serializedVersion: 4
@@ -136,6 +117,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.5364545, y: 7.1741786}
   m_Size: {x: 4.6701746, y: 15.348358}
   m_Direction: 0
+--- !u!95 &1519361277
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551523573868072904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a0bab6dedbad244ebac42f5743f040f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &659667689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +156,7 @@ MonoBehaviour:
   player: {fileID: 6551523573868072904}
   reStart: {fileID: 0}
   animator: {fileID: 1519361277}
+  extraJumps: 1
   rememberGroundedFor: 1
   isGroundedChecker: {fileID: 159435950}
   checkGroundRadius: 0.2
