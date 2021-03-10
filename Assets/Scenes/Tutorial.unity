@@ -2504,6 +2504,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 203485696}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &615542708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4670279534674312969, guid: 4a2e80084d9284e55a93aaf2759e79d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769910717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &615542716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615542708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31dad09689d2b4b1cae4cecf0905c8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  deathSpeed: 0
+  distance: 0
+  enemyDummy: {fileID: 0}
+  groundDetection: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &787713219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4124,7 +4148,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4670279534674312965, guid: 4a2e80084d9284e55a93aaf2759e79d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a2e80084d9284e55a93aaf2759e79d9, type: 3}
 --- !u!1001 &1785252331
 PrefabInstance:
@@ -4564,7 +4589,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4670279534674312965, guid: 4a2e80084d9284e55a93aaf2759e79d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a2e80084d9284e55a93aaf2759e79d9, type: 3}
 --- !u!1 &1914758327 stripped
 GameObject:
@@ -4572,6 +4598,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1914758326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914758335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914758327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31dad09689d2b4b1cae4cecf0905c8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  deathSpeed: 0
+  distance: 0
+  enemyDummy: {fileID: 0}
+  groundDetection: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1929735118
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class Patrol : MonoBehaviour
     public float speed, deathSpeed;
     public float distance;
     public Rigidbody2D enemyDummy;
-    public GameObject deathParticle;
     
 
     private bool movingRight = true;
@@ -44,7 +43,7 @@ public class Patrol : MonoBehaviour
            
             Destroy(gameObject, 1f);
             animator.SetTrigger("death");
-            Instantiate(deathParticle, transform.position, transform.rotation);
+            
         }
     }
 }
