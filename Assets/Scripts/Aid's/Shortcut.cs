@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shortcut : MonoBehaviour
 {
-    [SerializeField] private Transform spawnPointShortcut;
+    [SerializeField] private Transform spawnPointShortcutPlayer, spawnPointShortcutClone;
     [SerializeField] private Transform player, cloneCharacter;
 
     private bool cloneCharacterIsOverlaping = false;
@@ -14,17 +14,17 @@ public class Shortcut : MonoBehaviour
     {
         if (cloneCharacterIsOverlaping)
         {
-            cloneCharacter.transform.position = spawnPointShortcut.transform.position;
+            cloneCharacter.transform.position = spawnPointShortcutClone.transform.position;
         }
         if (PlayerIsOverLaping)
         {
-            player.transform.position = spawnPointShortcut.transform.position;
+            player.transform.position = spawnPointShortcutPlayer.transform.position;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "CloneCharacter")
             {
             cloneCharacterIsOverlaping = true;
             }
