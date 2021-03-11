@@ -7,6 +7,7 @@ public class Patrol : MonoBehaviour
     public float speed, deathSpeed;
     public float distance;
     public Rigidbody2D enemyDummy;
+    [SerializeField] private Transform deathParticle;
     
 
     private bool movingRight = true;
@@ -40,10 +41,10 @@ public class Patrol : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ammo"))
         {
-           
+            
             Destroy(gameObject, 1f);
             animator.SetTrigger("death");
-            
+            deathParticle.GetComponent<ParticleSystem>().Play();
         }
     }
 }

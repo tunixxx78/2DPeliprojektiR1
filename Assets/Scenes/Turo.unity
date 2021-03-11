@@ -4638,6 +4638,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1799295624}
     m_Modifications:
+    - target: {fileID: 3582290238535006190, guid: ca902a709d2e84ebfaa6a63ac52c8e3b,
+        type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1855211088}
     - target: {fileID: 6007871174595093096, guid: ca902a709d2e84ebfaa6a63ac52c8e3b,
         type: 3}
       propertyPath: m_RootOrder
@@ -23765,6 +23770,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1855211088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2295932878855284652, guid: ca902a709d2e84ebfaa6a63ac52c8e3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 330592204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858108117
 GameObject:
   m_ObjectHideFlags: 0
@@ -29187,6 +29198,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8197778874952831119, guid: 85995f6567a524f328cd714121ec474c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85995f6567a524f328cd714121ec474c, type: 3}
 --- !u!1001 &8518985355660572296
@@ -29196,21 +29212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1799295624}
     m_Modifications:
-    - target: {fileID: 532313788241375767, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 532313788241375767, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 532313788241375767, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718588, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_RootOrder
@@ -29266,41 +29267,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8023293715932718589, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718590, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Name
       value: "Vy\xF6ti\xE4inenOne"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023293715932718590, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: death
-      value: 
-      objectReference: {fileID: 2348834584193313359, guid: 2519fd73f19eb4c3f81f0da4a37d1927,
-        type: 3}
-    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: health
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023293716300751991, guid: 33645682688764ff180ff7e118d3668e,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33645682688764ff180ff7e118d3668e, type: 3}

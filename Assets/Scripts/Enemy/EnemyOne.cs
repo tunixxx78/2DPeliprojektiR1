@@ -6,12 +6,15 @@ public class EnemyOne : BaseEnemy
 {
     //[SerializeField] private Rigidbody2D enemyOne;
 
-    
+
     protected override void Agressive()
     {
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Agressive);
+            head.SetActive(false);
+            tail.SetActive(false);
+            rollAnim.SetActive(true);
             animator.SetBool("isMoving", true);
         }
 
@@ -23,6 +26,9 @@ public class EnemyOne : BaseEnemy
         if (distanceOfPlayer >= attackRange)
         {
             ChangeState(State.Idle);
+            rollAnim.SetActive(false);
+            head.SetActive(true);
+            tail.SetActive(true);
             animator.SetBool("isMoving", false);
         }
 
@@ -69,10 +75,13 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            rollAnim.SetActive(false);
+            deathParticle.GetComponent<ParticleSystem>().Play();
             movements = new Vector2(0f, rbe.velocity.y);
             ScoringSystem.theScore += 35;
+            
             animator.SetTrigger("death");
-            Destroy(gameObject, 0.8f);
+            Destroy(gameObject, 1.5f);
         }
     }
     
