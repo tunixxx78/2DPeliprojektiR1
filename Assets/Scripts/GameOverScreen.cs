@@ -7,11 +7,13 @@ public class GameOverScreen : MonoBehaviour
 {
    public void TryAgain()
     {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         SceneManager.LoadScene("Turo");
     }
 
     public void TryAgainSameLevel ()
     {
+        
         SceneManager.LoadScene("Turo");
     }
 

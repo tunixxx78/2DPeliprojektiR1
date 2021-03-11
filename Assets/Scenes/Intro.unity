@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -351,8 +351,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1950854746}
+  m_Children: []
   m_Father: {fileID: 1458180957}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -436,8 +435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.9, y: -294.1}
-  m_SizeDelta: {x: 233.31528, y: 971.325}
+  m_AnchoredPosition: {x: -2.9, y: -310.4}
+  m_SizeDelta: {x: 233.31528, y: 1003.8897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1458180958
 Animator:
@@ -490,72 +489,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Forest Guide
-
-
-    All started one morning
-
-    when you woke up and
-
-    realise
-    that something
-
-    bad has happened.
-
-
-    There was no light left.
-
-
-    Darkenss
-    has fallen into
-
-    world and swallowed all
-
-    that is good and worth
-
-    fight
-    for.
-
-
-
-
-
-    Now it''s your turn to
-
-    conquer all evil and
-
-    bring back
-    light to
-
-    this world.
-
-
-
-
-    Only way to do that is
-
-    find your clone
-    family and
-
-    guide them back home.
-
-
-
-    But be aware, darkness will
-
-    throw
-    some obstacles on your path.
-
-
-
-
-
-    Are you ready?
-
-
-
-
-    We rely on you.'
+  m_Text: "Forest Guide\n\nAll started one morning.\nWhen you woke only to\nrealise
+    that something\nbad has happened.\n\nThere was no light left.\n\nDarkenss has
+    fallen into\nworld and swallowed all\nthat is good and worth\nfight for.\n\n\n\nNow
+    it's your turn to\nconquer all evil and\nbring back light to\nthis world.\n\n\n\nOnly
+    way to do that is\nfind your clone family and\nguide them back home.\n\n\nBut
+    be aware, \ndarkness will\nthrow some obstacles on your path.\n\n\n\n\nAre you
+    ready?\n\n\n\nWe rely on you."
 --- !u!222 &1458180960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -653,84 +593,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623563533}
-  m_CullTransparentMesh: 0
---- !u!1 &1950854745
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1950854746}
-  - component: {fileID: 1950854748}
-  - component: {fileID: 1950854747}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1950854746
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950854745}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1347150299}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.94, y: -57.8}
-  m_SizeDelta: {x: 33.51996, y: 17.623291}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1950854747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950854745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 04adf3ebfd3dd4cefaf805d72b6dbdfe, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: GO
---- !u!222 &1950854748
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950854745}
   m_CullTransparentMesh: 0
 --- !u!1 &2097229176
 GameObject:
