@@ -53,7 +53,7 @@ public class EnemyOne : BaseEnemy
 
     protected override void Death()
     {
-       
+        
     }
 
     protected override void Idle()
@@ -75,11 +75,11 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
-            rollAnim.SetActive(false);
+            moveSpeedAttack = 0f;
+            ChangeState(State.Idle);
+            Destroy(rollAnim);
             deathParticle.GetComponent<ParticleSystem>().Play();
-            movements = new Vector2(0f, rbe.velocity.y);
             ScoringSystem.theScore += 35;
-            
             animator.SetTrigger("death");
             Destroy(gameObject, 1.5f);
         }

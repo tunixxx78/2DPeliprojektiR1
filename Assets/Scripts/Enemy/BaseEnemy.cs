@@ -12,7 +12,7 @@ public abstract class BaseEnemy : MonoBehaviour
     protected float health, moveSpeed, moveSpeedAttack, attackPower, maxIdleTime, maxPatrolTime,
                                      visionRange = 5f, attackRange = 2f, agressiveRange;
     protected float distanceOfPlayer, currentIdleTime = 0f, currentPatrolTime = 0f;
-    protected bool hasLineOfSight;
+    protected bool hasLineOfSight, hasBeenHit;
     protected Transform player;
     [SerializeField] protected Transform deathParticle;
     protected Vector2 movements;

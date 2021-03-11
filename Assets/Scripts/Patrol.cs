@@ -42,7 +42,7 @@ public class Patrol : MonoBehaviour
         if (collision.collider.CompareTag("Ammo"))
         {
             
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 2f);
             animator.SetTrigger("death");
             deathParticle.GetComponent<ParticleSystem>().Play();
         }
