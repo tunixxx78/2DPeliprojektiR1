@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11933,6 +11933,43 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 410707876, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707878, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c4228acd7689d41c38296a2f2599c3f4,
+        type: 3}
+    - target: {fileID: 410707878, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707878, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707879, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 176.38275
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707879, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 23.054482
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707879, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -286.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 410707879, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -121.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 906014174, guid: 21915f9ca39af6742b91b565a1e3411a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8289761177979600998, guid: 21915f9ca39af6742b91b565a1e3411a,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -11961,7 +11998,7 @@ PrefabInstance:
     - target: {fileID: 8289761178329314364, guid: 21915f9ca39af6742b91b565a1e3411a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8289761178329314364, guid: 21915f9ca39af6742b91b565a1e3411a,
         type: 3}
