@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: PostProsess Profile 1
+  m_Name: PostProcessJape
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 8170098909862623424}
---- !u!114 &8170098909862623424
+  - {fileID: 8611443380677559504}
+--- !u!114 &8611443380677559504
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,11 +30,11 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 6.87
+    m_Value: 3.85
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 5.19
+    m_Value: 62.96
     min: 0
   scatter:
     m_OverrideState: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.96499485, g: 0.33490568, b: 1, a: 1}
+    m_Value: {r: 1, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -59,5 +59,5 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: a65b7c4137f6a4e35a1154eb215f588b, type: 3}
   dirtIntensity:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 6.95
     min: 0
