@@ -75,6 +75,7 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            attackRange = 0f;
             moveSpeedAttack = 0f;
             ChangeState(State.Idle);
             Destroy(rollAnim);
@@ -82,6 +83,10 @@ public class EnemyOne : BaseEnemy
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
             Destroy(gameObject, 1.5f);
+        }
+        else
+        {
+            return;
         }
     }
     

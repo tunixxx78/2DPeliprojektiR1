@@ -5,7 +5,8 @@ using UnityEngine;
 public class trapUpper : baseTrap
 {
     [SerializeField] private SpriteRenderer rend;
-    [SerializeField] private Sprite IdlePlant, AtackPlant;
+    [SerializeField] private GameObject kukkaAttack, kukkaDeath;
+    //[SerializeField] private Sprite IdlePlant, AtackPlant;
     private Rigidbody2D upperTrap;
     public GameObject ammoSpawner;
     public bool setActive;
@@ -36,16 +37,18 @@ public class trapUpper : baseTrap
         {
            ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, -trapSize, 1f);
-            rend.sprite = AtackPlant;
+            //rend.sprite = AtackPlant;
             ammoSpawner.SetActive(true);
+            kukkaAttack.SetActive(true);
 
         }
        if (distanceOfPlayer >= moveRange)
         {
             ChangeState(State.Idle);
             transform.localScale = new Vector3(1f, 1f, 1f);
-            rend.sprite = IdlePlant;
+            //rend.sprite = IdlePlant;
             ammoSpawner.SetActive(false);
+            kukkaAttack.SetActive(false);
 
         }
     }
@@ -56,8 +59,9 @@ public class trapUpper : baseTrap
         {
             ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, -trapSize, 1f);
-            rend.sprite = AtackPlant;
+            //rend.sprite = AtackPlant;
             ammoSpawner.SetActive(true);
+            kukkaAttack.SetActive(true);
             
         }
     }
@@ -77,6 +81,8 @@ public class trapUpper : baseTrap
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            kukkaAttack.SetActive(false);
+            kukkaDeath.SetActive(true);
             ScoringSystem.theScore += 25;
             Destroy(gameObject);
             rend.sprite = null;

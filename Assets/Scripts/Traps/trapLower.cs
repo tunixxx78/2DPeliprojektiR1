@@ -5,7 +5,8 @@ using UnityEngine;
 public class trapLower : baseTrap
 {
     [SerializeField] private SpriteRenderer rend;
-    [SerializeField] private Sprite IdlePlant, AtackPlant;
+    [SerializeField] private GameObject kukkaAttack, kukkaDeath;
+    //[SerializeField] private Sprite IdlePlant, AtackPlant;
     [SerializeField] private Rigidbody2D lowerTrap;
     public GameObject ammoSpawner;
     public bool setActive;
@@ -26,6 +27,10 @@ public class trapLower : baseTrap
                 ammoSpawner.SetActive(false);
                 Debug.Log("move");
             }
+            if (distanceOfPlayer >= visionRange)
+            {
+                kukkaAttack.SetActive(false);
+            }
         }
     }
 
@@ -35,14 +40,15 @@ public class trapLower : baseTrap
         {
             ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, trapSize, 1f);
-            rend.sprite = AtackPlant;
+            //rend.sprite = AtackPlant;
             ammoSpawner.SetActive(true);
+
         }
         if (distanceOfPlayer >= moveRange)
         {
             ChangeState(State.Idle);
             transform.localScale = new Vector3(1f, 1f, 1f);
-            rend.sprite = IdlePlant;
+            //rend.sprite = IdlePlant;
             ammoSpawner.SetActive(false);
         }
     }
@@ -53,8 +59,13 @@ public class trapLower : baseTrap
         {
             ChangeState(State.Attack);
             transform.localScale = new Vector3(1f, trapSize, 1f);
-            rend.sprite = AtackPlant;
+            //rend.sprite = AtackPlant;
             ammoSpawner.SetActive(true);
+            kukkaAttack.SetActive(true);
+        }
+        if (distanceOfPlayer >= attackRange)
+        {
+            kukkaAttack.SetActive(false);
         }
     }
 
@@ -65,7 +76,9 @@ public class trapLower : baseTrap
 
     public void Death()
     {
-        Destroy(gameObject);
+        kukkaAttack.SetActive(false);
+        kukkaDeath.SetActive(true);
+        Destroy(gameObject, 1f);
         rend.sprite = null;
     }
 
@@ -73,6 +86,8 @@ public class trapLower : baseTrap
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            kukkaAttack.SetActive(false);
+            kukkaDeath.SetActive(true);
             ScoringSystem.theScore += 25;
             Destroy(gameObject);
             rend.sprite = null;

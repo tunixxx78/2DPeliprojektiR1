@@ -98,8 +98,8 @@ MonoBehaviour:
     type: 3}
   spawnPointForTrap: {fileID: 4482324246831819854}
   rend: {fileID: 0}
-  IdlePlant: {fileID: 21300000, guid: f428e14b3e6f24a9aa151d68c354e1f7, type: 3}
-  AtackPlant: {fileID: 21300000, guid: 07a4bfa9c8d6f4a07ac861d53b0993aa, type: 3}
+  kukkaAttack: {fileID: 0}
+  kukkaDeath: {fileID: 0}
   ammoSpawner: {fileID: 3537513385615647501}
   setActive: 1
 --- !u!61 &9207696465730303745
@@ -171,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5980642007661352762, guid: b8086d4a1f3e740be9fc8bee4266595a,
         type: 3}
