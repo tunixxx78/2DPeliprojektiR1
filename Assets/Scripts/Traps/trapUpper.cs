@@ -81,6 +81,7 @@ public class trapUpper : baseTrap
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/CharShot", GetComponent<Transform>().position);
             kukkaAttack.SetActive(false);
             kukkaDeath.SetActive(true);
             ScoringSystem.theScore += 25;
@@ -88,5 +89,6 @@ public class trapUpper : baseTrap
             rend.sprite = null;
 
         }
+        
     }
 }

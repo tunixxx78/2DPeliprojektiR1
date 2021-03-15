@@ -184,6 +184,14 @@ public class PlayerCharacterController : MonoBehaviour
             emptyObject.transform.parent = collision.gameObject.transform;  //luodaan tyhjä child objecti platformille ja tehdään pelaajasta tyhjän objektin
             player.transform.parent = emptyObject.transform;                //childi jolloin pelaaja perii välittömän vanhemman koon eikä platformin kokoa
         }                                                                   //fixi scale bugille kun hyppäsi liikkuvalle platformille. Japen Liäsys
+        if (collision.collider.CompareTag("TrapAmmo"))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
+        }
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
+        }
 
 
     }
