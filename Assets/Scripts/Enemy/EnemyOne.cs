@@ -82,12 +82,12 @@ public class EnemyOne : BaseEnemy
             attackPower = 0f;
             moveSpeed = 0f;
             moveSpeedAttack = 0f;
-            ChangeState(State.Idle);
-            Destroy(rollAnim);
+            //ChangeState(State.Idle);
+            rollAnim.SetActive(false);
             deathParticle.GetComponent<ParticleSystem>().Play();
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 2f);
             rbe.isKinematic = true;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;

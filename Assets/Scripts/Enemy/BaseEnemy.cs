@@ -66,6 +66,10 @@ public abstract class BaseEnemy : MonoBehaviour
                 ChangeState(State.Agressive);
 
             }
+            else
+            {
+                return;
+            }
         }
 
     }
