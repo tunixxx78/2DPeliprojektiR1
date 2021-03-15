@@ -14,12 +14,16 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private float sizeMultiplier = 1f; //Turo lisäsi tämän
     [SerializeField] private GameObject player, reStart; //Turo lisäsi
     [SerializeField] private Animator animator;
+    [SerializeField] public GameObject canvasBoard;
 
     public int extraJumps = 1;
     int jumpCount = 0;
     float jumpCooldown;
-    
-    
+
+
+
+
+
 
 
     public float rememberGroundedFor;
@@ -35,8 +39,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void Awake()
     {
+
         transform.localScale = new Vector3(0.15f * sizeMultiplier, 0.15f * sizeMultiplier, 1f); //Turo lisäsi koko metodin
+
     }
+
 
     void Start()
     {
@@ -68,9 +75,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     }
 
-    
+
+
     void Move()
     {
+
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speed;
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
@@ -82,21 +91,28 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0)
         {
             characterScale.x = 0.15f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            canvasBoard.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
             characterScale.x = -0.15f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
+            canvasBoard.transform.localScale = new Vector3(-0.01f, 0.01f, 0.01f);
         }
         transform.localScale = characterScale;
+
+
+
+
+
     }
 
     void Jump()
     {
         if (Input.GetKey(KeyCode.Space))
-        { 
+        {
             animator.SetBool("InAir", true);
         }
-        
+
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || jumpCount < extraJumps))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -107,7 +123,7 @@ public class PlayerCharacterController : MonoBehaviour
         else
         {
             //animator.SetBool("InAir", false);
-            
+
         }
         CheckIfGrounded();
     }
@@ -129,10 +145,10 @@ public class PlayerCharacterController : MonoBehaviour
         }
         else
         {
-           /* if (isGrounded)
-            {
-                lastTimeGrounded = Time.time;
-            }*/
+            /* if (isGrounded)
+             {
+                 lastTimeGrounded = Time.time;
+             }*/
             isGrounded = false;
             animator.SetBool("runAnim", false);
         }
@@ -177,7 +193,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (collision.collider.CompareTag("Platform"))
         {
             player.transform.parent = null;
-            
+
         }
     }
 }

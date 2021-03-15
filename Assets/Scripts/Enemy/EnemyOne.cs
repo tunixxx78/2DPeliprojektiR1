@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyOne : BaseEnemy
 {
     //[SerializeField] private Rigidbody2D enemyOne;
+    
 
 
     protected override void Agressive()
@@ -51,9 +52,10 @@ public class EnemyOne : BaseEnemy
         }
     }
 
+
     protected override void Death()
     {
-        
+
     }
 
     protected override void Idle()
@@ -76,6 +78,8 @@ public class EnemyOne : BaseEnemy
         if (collision.collider.CompareTag("Ammo"))
         {
             attackRange = 0f;
+            attackPower = 0f;
+            moveSpeed = 0f;
             moveSpeedAttack = 0f;
             ChangeState(State.Idle);
             Destroy(rollAnim);
@@ -83,10 +87,13 @@ public class EnemyOne : BaseEnemy
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
             Destroy(gameObject, 1.5f);
+            rbe.isKinematic = true;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
         }
         else
         {
-            return;
+            return;              
         }
     }
     

@@ -63,10 +63,12 @@ public class PlayerHealthBarJape : MonoBehaviour
             TakeDamage(10);
             healthBar.gameObject.SetActive(true);
             StartCoroutine(LateCall());
+            
         }
         else if (collision.collider.CompareTag("Enemy"))
         {
             TakeDamage(20);
+            
             healthBar.gameObject.SetActive(true);
             StartCoroutine(LateCall());
         }
