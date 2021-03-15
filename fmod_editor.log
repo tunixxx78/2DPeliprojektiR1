@@ -7,10 +7,1048 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fe09889d208 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fe09e6d1a08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='walk228', format=5, channels=1, frequency=48000, lengthbytes=5920, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.053284.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='walk128', format=5, channels=1, frequency=48000, lengthbytes=5184, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.032745.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='walk328', format=5, channels=1, frequency=48000, lengthbytes=5056, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019806.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09c7caf68 : node = 0x7fe09c709bd0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09c7caf68
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09c709ce0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09c7caf68
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='jump_cough203', format=5, channels=1, frequency=48000, lengthbytes=1888, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.116974.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Jump2-Gravel25', format=5, channels=2, frequency=48000, lengthbytes=8576, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.232788.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='jump_cough103', format=5, channels=1, frequency=48000, lengthbytes=2720, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.230713.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f5ce368
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f5ce368
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09a6b8fe8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cartoon-Funny-Rise-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=3840, lengthpcm=18432, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165039.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09de0b048
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cartoon-Slip-C-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=4128, lengthpcm=20736, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.339478.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe099679968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='shoot152', format=5, channels=1, frequency=48000, lengthbytes=1536, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.568512.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe099679968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='shoot452', format=5, channels=1, frequency=48000, lengthbytes=1632, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.419830.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe099679968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='shoot252', format=5, channels=1, frequency=48000, lengthbytes=1472, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe099679968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='shoot352', format=5, channels=1, frequency=48000, lengthbytes=1568, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe099679968
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='shoot552', format=5, channels=1, frequency=48000, lengthbytes=1664, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09c7586f8 : node = 0x7fe09c7afb60
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09c7586f8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09c7afc70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09c7586f8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09c7586f8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09961aee8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe099615cd8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995c40a8 : node = 0x7fe099559a20
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995c40a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe099559b30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995c40a8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe0995c40a8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cd89ad8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cd1e198)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09cfc3358 : node = 0x7fe0afde59d0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09cfc3358
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe0afde5ae0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09cfc3358
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cfc3358)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cd749e8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cda25d8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995807a8 : node = 0x7fe099598e30
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995510c8 : node = 0x7fe09959d620
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995807a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe099598f40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995807a8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995510c8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09959d730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995510c8
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09c7caf68)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07e5151b8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07f5ce368)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09da727d8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09dea4c78)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09de81b88)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09955b168 : node = 0x7fe099555ba0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09955b168
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe099555cb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09955b168
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09955b168)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d92a6f8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9f0718)
+[WRN] DSPJobList::addJob                       : DSP JobList expanding job from 1024 entries to 2048 entries.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09c7eccb8 : node = 0x7fe09c7ece70
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09c7eccb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09c7ecf80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09c7eccb8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09c7eccb8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09fc8beb8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe07eaf1c98)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09d9f7e88 : node = 0x7fe09d978620
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09d9f7e88
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09d978730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09d9f7e88
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9f7e88)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09fc8beb8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe07ea4c638)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x7000045c6954
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1661f47fa
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1661f48b1
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1661f48de
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1661f4982
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe09d9f5dc8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireWorks-Double-Pop-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=33792, lengthpcm=133632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09de61228 : node = 0x7fe09d9d9470
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09de61228
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09d9d9580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09de61228
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09de61228)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe07e61f8e8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09c5e67d8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995d4aa8 : node = 0x7fe07e5f0410
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995d9928 : node = 0x7fe099687500
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995d4aa8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07e5f0520
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995d4aa8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995d9928
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe099687610
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995d9928
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe0995510c8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09e8b45f8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09d922eb8)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe0995807a8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe09e89a688)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe09d91d668)
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe07f25e738 : node = 0x7fe0afdedfd0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f25e738
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe0afdee0e0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f25e738
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe07f25e738)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe0bfdd27f8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe0bfde6808)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09c5de018 : node = 0x7fe09dc27b10
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09c74a7f8 : node = 0x7fe09c5cb9c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09c5de018
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09dc27c20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09c5de018
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09c74a7f8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09c5cbad0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09c74a7f8
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe0995d9928)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07e60cda8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07ef3fba8)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe0995d4aa8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe0bfdf2fe8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe0bfdff488)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09eaa27d8 : node = 0x7fe09cd05ad0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09eaa27d8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09cd05be0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09eaa27d8
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09ee5e148 : node = 0x7fe07ea774a0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09ee5e148
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07ea775b0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09ee5e148
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09eaa27d8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d98fa68)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d98fbf8)
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09ee5e148)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9877d8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9f73c8)
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe07f51bd78 : node = 0x7fe07f558780
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f51bd78
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07f558890
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f51bd78
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe07f51bd78)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe0bfdff488)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe07e620078)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe099678ae8 : node = 0x7fe099636c80
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe099678ae8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe099636d90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 96000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2Dpeliprojekti - 18.2.2021, 12.48', format=5, channels=2, frequency=48000, lengthbytes=2944832, lengthpcm=11621183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234892.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe099678ae8
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09cdfa588)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09dec6218)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09de99a18)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09da39528 : node = 0x7fe09da396e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09da2a1f8 : node = 0x7fe09da399c0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da39528
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09da397f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da39528
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da2a1f8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09da39ad0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da2a1f8
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09c74a7f8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe0afd32d68)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07ec1e4d8)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09c5de018)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe0afd1f688)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07f2258d8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09ceaed98 : node = 0x7fe0afd622d0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09ceaed98
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe0afd623e0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09ceaed98
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09ceaed98)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09fc8beb8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09fc6d038)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09fc89138 : node = 0x7fe07ea774a0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09fc89138
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07ea775b0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09fc89138
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09fc89138)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da72c48)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da53c68)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09da4dfb8 : node = 0x7fe09da4e170
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da4dfb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09da4e280
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da4dfb8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da4dfb8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9dd028)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d92a6f8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09da72c48 : node = 0x7fe09ed35fd0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09ea50bb8 : node = 0x7fe09da4fcb0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da72c48
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09ed360e0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da72c48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09ea50bb8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09da4fdc0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09ea50bb8
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09da2a1f8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09c1e5138)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07f361898)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09da39528)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe09c1a0cc8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe09cbbd788)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0995466d8 : node = 0x7fe0995d7210
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0995466d8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe0995d7320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0995466d8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe0995466d8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d99dd48)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d9593b8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe0996fcd78 : node = 0x7fe0995d7210
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe0996fcd78
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe0995d7320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe0996fcd78
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe0996fcd78)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cdfa588)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cdbbe88)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09cfb5ab8 : node = 0x7fe07e713d30
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09cfb5ab8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07e713e40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09cfb5ab8
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cfb5ab8)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da53e28)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da3f848)
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09fc89138 : node = 0x7fe07ea56510
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09fc89138
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07ea56620
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 96000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2Dpeliprojekti - 18.2.2021, 12.48', format=5, channels=2, frequency=48000, lengthbytes=2944832, lengthpcm=11621183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234892.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09fc89138
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09da71718 : node = 0x7fe09daf2cb0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da71718
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7fe09da635a8 : node = 0x7fe09da53760
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09daf2dc0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da71718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09da635a8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09da53870
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09da635a8
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe099678ae8)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09dcecc28)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09dcfc5f8)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09da72c48)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe0996b9ef8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07f5eb4c8)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09ea50bb8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07f5f5658)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe0996c22d8)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09a2e9618 : node = 0x7fe07e713d30
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09cf58198 : node = 0x7fe07eef1f50
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09a2e9618
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07e713e40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09a2e9618
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09cf58198
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07eef2060
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09cf58198
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09da635a8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07ea5c3c8)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07eaa0f68)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09da71718)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07ea787e8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07eab8c48)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe09d954028 : node = 0x7fe09d9dd040
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe09d954028
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe09d9dd150
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 434
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Blow-Torch-B-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=141088, lengthpcm=683136, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.885529.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe09d954028
+[LOG] SoundI::release                          : Blow-Torch-B-www.fesliyanstudios.com (0x7fe09d954028)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09da3f848)
+[LOG] SoundI::release                          :     Blow-Torch-B-www.fesliyanstudios.com (0x7fe09cdeb038)
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe07f6f1ad8 : node = 0x7fe07ea57240
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe07f6e1228 : node = 0x7fe07ead7d30
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f6f1ad8
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07ea57350
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mixkit-light-wind-1165', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=866283, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109314.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f6f1ad8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f6e1228
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07ead7e40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambient-Birds-Singing-A2-www.fesliyanstudios.com', format=5, channels=2, frequency=48000, lengthbytes=477088, lengthpcm=1699200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219543.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f6e1228
+[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe07f6da418 : node = 0x7fe07eae7e70
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe09cd9f0e8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe07f6da418
+[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6913408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe07eae7f80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 96000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2Dpeliprojekti - 18.2.2021, 12.48', format=5, channels=2, frequency=48000, lengthbytes=2944832, lengthpcm=11621183, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.234892.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe07f6da418
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe09a2e9618)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07ea711f8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe07eac5eb8)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09cf58198)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07eaee558)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07ea48b48)
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09fc89138)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09fc8beb8)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe09fc64198)
+[LOG] SoundI::release                          : Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe07f6e1228)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe0afd1f688)
+[LOG] SoundI::release                          :     Ambient-Birds-Singing-A2-www.fesliyanstudios.com (0x7fe09c40a778)
+[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe07f6f1ad8)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe0afd32d68)
+[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe09c4646b8)
+[LOG] SoundI::release                          : 2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe07f6da418)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe07e70c428)
+[LOG] SoundI::release                          :     2Dpeliprojekti - 18.2.2021, 12.48 (0x7fe0993c8a38)
+[LOG] SoundI::release                          :  (0x7fe09d9b3dd8)
+[LOG] SoundI::release                          :     FireWorks-Double-Pop-www.fesliyanstudios.com (0x7fe09d9d8868)
+[LOG] SoundI::release                          :  (0x7fe09da5ca98)
+[LOG] SoundI::release                          :     Chewing-food-with-mouth-open-med-speed-www.fesliyanstudios.com (0x7fe09dad2cd8)
+[LOG] SoundI::release                          :  (0x7fe09cd559a8)
+[LOG] SoundI::release                          :     Cartoon-Funny-Rise-B-www.fesliyanstudios.com (0x7fe09cdb35a8)
+[LOG] SoundI::release                          :  (0x7fe09965f2b8)
+[LOG] SoundI::release                          :     shoot152 (0x7fe09965fa18)
+[LOG] SoundI::release                          :  (0x7fe07f5d1a98)
+[LOG] SoundI::release                          :     shoot252 (0x7fe07f5fbf38)
+[LOG] SoundI::release                          :  (0x7fe07f5f0bb8)
+[LOG] SoundI::release                          :     shoot352 (0x7fe07f57f4a8)
+[LOG] SoundI::release                          :  (0x7fe099697a08)
+[LOG] SoundI::release                          :     shoot452 (0x7fe09961eef8)
+[LOG] SoundI::release                          :  (0x7fe07f5d5688)
+[LOG] SoundI::release                          :     shoot552 (0x7fe07f5b03f8)
+[LOG] SoundI::release                          :  (0x7fe09da500e8)
+[LOG] SoundI::release                          :     lioncub (0x7fe09daff128)
+[LOG] SoundI::release                          :  (0x7fe07f03ca98)
+[LOG] SoundI::release                          :     walk128 (0x7fe09ed87f88)
+[LOG] SoundI::release                          :  (0x7fe099066de8)
+[LOG] SoundI::release                          :     walk228 (0x7fe099745268)
+[LOG] SoundI::release                          :  (0x7fe07f0f4d28)
+[LOG] SoundI::release                          :     walk328 (0x7fe09cd08808)
+[LOG] SoundI::release                          :  (0x7fe09975ff08)
+[LOG] SoundI::release                          :     Jump2-Gravel25 (0x7fe09cdebbf8)
+[LOG] SoundI::release                          :  (0x7fe0997b3fe8)
+[LOG] SoundI::release                          :     jump_cough103 (0x7fe09cdf3b78)
+[LOG] SoundI::release                          :  (0x7fe09ea9b0f8)
+[LOG] SoundI::release                          :     jump_cough203 (0x7fe09cd28f38)
+[LOG] SoundI::release                          :  (0x7fe09c0ecc38)
+[LOG] SoundI::release                          :     Cartoon-Slip-C-www.fesliyanstudios.com (0x7fe09e842ac8)
+[LOG] SoundI::release                          :  (0x7fe09da58048)
+[LOG] SoundI::release                          :     Big Static Transmission (0x7fe09da0ad88)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

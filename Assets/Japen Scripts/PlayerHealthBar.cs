@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthBar : MonoBehaviour
 {
-    [SerializeField] private GameObject deathParticle;
+    [SerializeField] private GameObject deathParticle, player;
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -32,7 +32,7 @@ public class PlayerHealthBar : MonoBehaviour
         if (currentHealth <= 0f)
         {
             deathParticle.SetActive(true);
-            Destroy(gameObject);
+            player.SetActive(false);
         }
     }
 
