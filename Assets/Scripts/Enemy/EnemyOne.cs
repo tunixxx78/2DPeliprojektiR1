@@ -102,7 +102,7 @@ public class EnemyOne : BaseEnemy
             deathParticle.GetComponent<ParticleSystem>().Play();
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 4f);
             rbe.isKinematic = true;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;

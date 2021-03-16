@@ -43,7 +43,7 @@ public class Patrol : MonoBehaviour
         {
             speed = 0f;
             FMODUnity.RuntimeManager.PlayOneShot("event:/CharShot", GetComponent<Transform>().position);
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 1.5f);
             animator.SetTrigger("death");
             deathParticle.GetComponent<ParticleSystem>().Play();
             //enemyDummy.isKinematic = true;
