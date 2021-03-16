@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collecting : MonoBehaviour
+public class PointOfInterest : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
 
     void OnTriggerEnter2D(Collider2D collision)
 
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Collecting", GetComponent<Transform>().position);
         ScoringSystem.theScore += 50;
-        Destroy(gameObject);
+        animator.SetTrigger("destroy");
+        Destroy(gameObject, 1f);
     }
-
 }

@@ -16,7 +16,7 @@ public abstract class BaseEnemy : MonoBehaviour
     protected Transform player;
     [SerializeField] protected Transform deathParticle;
     protected Vector2 movements;
-    [SerializeField] protected GameObject head, tail, rollAnim;
+    [SerializeField] protected GameObject head, tail, bl, br, fl, fr, fs, bs, mb, rollAnim;
 
     private State enemyState = State.Idle;
     protected Rigidbody2D rbe;

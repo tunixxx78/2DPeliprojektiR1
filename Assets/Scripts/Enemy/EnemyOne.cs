@@ -13,6 +13,13 @@ public class EnemyOne : BaseEnemy
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Agressive);
+            bl.SetActive(false);
+            br.SetActive(false);
+            fl.SetActive(false);
+            fr.SetActive(false);
+            fs.SetActive(false);
+            bs.SetActive(false);
+            mb.SetActive(false);
             head.SetActive(false);
             tail.SetActive(false);
             rollAnim.SetActive(true);
@@ -29,6 +36,13 @@ public class EnemyOne : BaseEnemy
         {
             ChangeState(State.Idle);
             rollAnim.SetActive(false);
+            bl.SetActive(true);
+            br.SetActive(true);
+            fl.SetActive(true);
+            fr.SetActive(true);
+            fs.SetActive(true);
+            bs.SetActive(true);
+            mb.SetActive(true);
             head.SetActive(true);
             tail.SetActive(true);
             animator.SetBool("isMoving", false);
