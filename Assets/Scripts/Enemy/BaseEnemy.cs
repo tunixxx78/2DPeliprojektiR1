@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 
 public abstract class BaseEnemy : MonoBehaviour
 {
