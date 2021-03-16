@@ -13,10 +13,17 @@ public class EnemyOne : BaseEnemy
         if (distanceOfPlayer <= attackRange)
         {
             ChangeState(State.Agressive);
+            bl.SetActive(false);
+            br.SetActive(false);
+            fl.SetActive(false);
+            fr.SetActive(false);
+            fs.SetActive(false);
+            bs.SetActive(false);
+            mb.SetActive(false);
             head.SetActive(false);
             tail.SetActive(false);
             rollAnim.SetActive(true);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyAttack", GetComponent<Transform>().position);
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyAttack", GetComponent<Transform>().position);
             animator.SetBool("isMoving", true);
         }
 
@@ -29,6 +36,13 @@ public class EnemyOne : BaseEnemy
         {
             ChangeState(State.Idle);
             rollAnim.SetActive(false);
+            bl.SetActive(true);
+            br.SetActive(true);
+            fl.SetActive(true);
+            fr.SetActive(true);
+            fs.SetActive(true);
+            bs.SetActive(true);
+            mb.SetActive(true);
             head.SetActive(true);
             tail.SetActive(true);
             animator.SetBool("isMoving", false);
@@ -88,7 +102,7 @@ public class EnemyOne : BaseEnemy
             deathParticle.GetComponent<ParticleSystem>().Play();
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 4f);
             rbe.isKinematic = true;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;
