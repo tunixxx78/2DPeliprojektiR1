@@ -92,7 +92,7 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/CharShot", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/enemyShot", GetComponent<Transform>().position);
             attackRange = 0f;
             attackPower = 0f;
             moveSpeed = 0f;

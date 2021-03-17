@@ -42,7 +42,7 @@ public class Patrol : MonoBehaviour
         if (collision.collider.CompareTag("Ammo"))
         {
             speed = 0f;
-            FMODUnity.RuntimeManager.PlayOneShot("event:/CharShot", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
             Destroy(gameObject, 1.5f);
             animator.SetTrigger("death");
             deathParticle.GetComponent<ParticleSystem>().Play();

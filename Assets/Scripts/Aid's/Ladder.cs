@@ -11,16 +11,23 @@ public class Ladder : MonoBehaviour
         if (collision.tag == "Player" && Input.GetKey(KeyCode.W))
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, climbSpeed);
+            FindObjectOfType<PlayerCharacterController>().IsClimbing();
+            
         }
 
         else if (collision.tag == "Player" && Input.GetKey(KeyCode.S))
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -climbSpeed);
+            FindObjectOfType<PlayerCharacterController>().IsClimbing();
         }
 
         else
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0.2f);
+            
         }
     }
+    
+
+
 }
