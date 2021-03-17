@@ -31,8 +31,10 @@ public class PlayerHealthBar : MonoBehaviour
     {
         if (currentHealth <= 0f)
         {
-            deathParticle.SetActive(true);
-            player.SetActive(false);
+            FindObjectOfType<PlayerCharacterController>().IsDead();
+            //deathParticle.SetActive(true);
+            //Destroy(gameObject, 1.5f);
+            GetComponent<CapsuleCollider2D>().enabled = false;
         }
     }
 
@@ -45,7 +47,7 @@ public class PlayerHealthBar : MonoBehaviour
         if (currentHealth <= 0)
         {
             FindObjectOfType<GameManager>().ZeroHealth();
-
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Death", GetComponent<Transform>().position);
         }
     }
 

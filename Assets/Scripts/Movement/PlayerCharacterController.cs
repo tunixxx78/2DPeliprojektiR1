@@ -111,6 +111,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             animator.SetBool("InAir", true);
+            animator.SetBool("IsClimbing", false);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || jumpCount < extraJumps))
@@ -118,6 +119,7 @@ public class PlayerCharacterController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpCount++;
             animator.SetBool("InAir", true);
+            animator.SetBool("IsClimbing", false);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Jump", GetComponent<Transform>().position);
         }
         else
@@ -137,6 +139,7 @@ public class PlayerCharacterController : MonoBehaviour
             jumpCount = 0;
             jumpCooldown = Time.time + 0.2f;
             animator.SetBool("InAir", false);
+            animator.SetBool("IsClimbing", false);
 
         }
         else if (Time.time < jumpCooldown)
@@ -174,6 +177,20 @@ public class PlayerCharacterController : MonoBehaviour
         }
     }
 
+    public void IsDead()
+    {
+        animator.SetTrigger("Death");
+    }
+
+    public void IsClimbing()
+    {
+        animator.SetBool("IsClimbing", true);
+    }
+    public void IsNotClimbing()
+    {
+        animator.SetBool("isClimbing", false);
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
@@ -186,11 +203,11 @@ public class PlayerCharacterController : MonoBehaviour
         }                                                                   //fixi scale bugille kun hyppäsi liikkuvalle platformille. Japen Liäsys
         if (collision.collider.CompareTag("TrapAmmo"))
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/charShot", GetComponent<Transform>().position);
         }
         if (collision.collider.CompareTag("Enemy"))
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/charShot", GetComponent<Transform>().position);
         }
 
 
@@ -204,4 +221,6 @@ public class PlayerCharacterController : MonoBehaviour
 
         }
     }
+   
+    
 }

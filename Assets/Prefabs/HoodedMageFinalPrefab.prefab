@@ -156,6 +156,7 @@ MonoBehaviour:
   player: {fileID: 6551523573868072904}
   reStart: {fileID: 0}
   animator: {fileID: 1519361277}
+  canvasBoard: {fileID: 0}
   extraJumps: 1
   rememberGroundedFor: 1
   isGroundedChecker: {fileID: 159435950}
@@ -175,6 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22eff6593a8f8d04195ab4b72cae374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticle: {fileID: 0}
+  player: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -238,6 +241,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
   ListenerNumber: -1
+--- !u!58 &8869830235651373131
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551523573868072904}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.28, y: 1.0623868}
+  serializedVersion: 2
+  m_Radius: 0.31238675
 --- !u!1001 &5664468765872413065
 PrefabInstance:
   m_ObjectHideFlags: 0
