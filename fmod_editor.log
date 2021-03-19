@@ -6,48 +6,10 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fe8bb9ae008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fa6918a9208 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SystemI::createSound                     : filename = ../Desktop/testii/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fe8cb33cb28 : node = 0x7fe8cf054a70
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe8cb8953e8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe8cb33cb28
-[LOG] SystemI::createSoundInternal             :     Create name='../Desktop/testii/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6797120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 29152
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe8cf054b80
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='2Dpeliprojekti - 2.3.2021, 14.32', format=5, channels=2, frequency=48000, lengthbytes=336128, lengthpcm=2348062, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.033167.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe8cb33cb28
-[LOG] SoundI::release                          : 2DPeliIntoScene - 2.3.2021, 11.00 (0x7fe8ced79e08)
-[LOG] SoundI::release                          :     2DPeliIntoScene - 2.3.2021, 11.00 (0x7fe8cf757d38)
-[LOG] SoundI::release                          :     2DPeliIntoScene - 2.3.2021, 11.00 (0x7fe8cbe93be8)
-[LOG] SoundI::release                          : Untitled - 3.3.2021, 8.40 (0x7fe8e853cc68)
-[LOG] SoundI::release                          :     Untitled - 3.3.2021, 8.40 (0x7fe8bd119a28)
-[LOG] SoundI::release                          :     Untitled - 3.3.2021, 8.40 (0x7fe8c8185bf8)
-[LOG] SoundI::release                          : mixkit-light-wind-1165 (0x7fe8cf5eb1b8)
-[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe8aee142d8)
-[LOG] SoundI::release                          :     mixkit-light-wind-1165 (0x7fe8aff98428)
-[LOG] SoundI::release                          : 2Dpeliprojekti - 2.3.2021, 14.32 (0x7fe8cb33cb28)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 2.3.2021, 14.32 (0x7fe8cedea458)
-[LOG] SoundI::release                          :     2Dpeliprojekti - 2.3.2021, 14.32 (0x7fe8af974408)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.

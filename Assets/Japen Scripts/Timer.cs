@@ -33,6 +33,12 @@ public class Timer : MonoBehaviour
                 FindObjectOfType<GameManager>().TimeHasRunOut();
             }
         }
+        if (timeRemaining <= 60)
+        {
+            timeText.color = Color.red;
+            timeText.fontSize = 30;
+        }
+       
     }
 
     void DisplayTime(float timeToDisplay)
