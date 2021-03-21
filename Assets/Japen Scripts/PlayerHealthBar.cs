@@ -33,7 +33,7 @@ public class PlayerHealthBar : MonoBehaviour
         {
             FindObjectOfType<PlayerCharacterController>().IsDead();
             //deathParticle.SetActive(true);
-            //Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 1.5f);
             GetComponent<CapsuleCollider2D>().enabled = false;
         }
     }

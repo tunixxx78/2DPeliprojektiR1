@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     [SerializeField] private GameObject restartPoint;
     [SerializeField] private Transform player;
-    public GameObject endFade;
+    public GameObject endFade, gameOver, timeOver;
 
     public void EndGame()
     {
@@ -34,13 +34,13 @@ public class GameManager : MonoBehaviour
     }
     public void ZeroHealth()
     {
-        Invoke("GameOver", 2f);
+        gameOver.SetActive(true);
+        //Invoke("GameOver", 2f);
     }
 
     public void TimeHasRunOut()
     {
-        SceneManager.LoadScene("RunOutOfTime");
-        Debug.Log("TIME RUN OUT!!!");
+        timeOver.SetActive(true);
     }
 
     public void GameOver()
