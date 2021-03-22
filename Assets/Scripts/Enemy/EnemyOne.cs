@@ -23,7 +23,7 @@ public class EnemyOne : BaseEnemy
             head.SetActive(false);
             tail.SetActive(false);
             rollAnim.SetActive(true);
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyAttack", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyAttack", GetComponent<Transform>().position);
             animator.SetBool("isMoving", true);
         }
 

@@ -10,6 +10,7 @@ public class trapLower : baseTrap
     [SerializeField] private Rigidbody2D lowerTrap;
     public GameObject ammoSpawner;
     public bool setActive;
+    
 
     protected override void Idle()
     {

@@ -28,7 +28,7 @@ public class CloneMovement : MonoBehaviour
     {
         if (collision.CompareTag("Home"))
         {
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 0.5f);
         }
     }
 

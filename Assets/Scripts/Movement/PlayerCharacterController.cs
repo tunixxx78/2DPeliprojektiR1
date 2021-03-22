@@ -48,7 +48,7 @@ public class PlayerCharacterController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
 
@@ -197,6 +197,7 @@ public class PlayerCharacterController : MonoBehaviour
         canJump = true;
         if (collision.collider.CompareTag("Platform"))
         {
+            rb.interpolation = RigidbodyInterpolation2D.None;
             var emptyObject = new GameObject();
             emptyObject.transform.parent = collision.gameObject.transform;  //luodaan tyhjä child objecti platformille ja tehdään pelaajasta tyhjän objektin
             player.transform.parent = emptyObject.transform;                //childi jolloin pelaaja perii välittömän vanhemman koon eikä platformin kokoa
@@ -217,6 +218,7 @@ public class PlayerCharacterController : MonoBehaviour
         canJump = false;
         if (collision.collider.CompareTag("Platform"))
         {
+            rb.interpolation = RigidbodyInterpolation2D.Interpolate;
             player.transform.parent = null;
 
         }

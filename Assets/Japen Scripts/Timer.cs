@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
+        Time.timeScale = 1f;
     }
 
 
@@ -30,9 +31,16 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining = 0;
                 timerIsRunning = false;
+                Time.timeScale = 0.0f;
                 FindObjectOfType<GameManager>().TimeHasRunOut();
             }
         }
+        if (timeRemaining <= 60)
+        {
+            timeText.color = Color.red;
+            timeText.fontSize = 30;
+        }
+       
     }
 
     void DisplayTime(float timeToDisplay)
