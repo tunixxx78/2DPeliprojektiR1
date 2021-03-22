@@ -41,12 +41,13 @@ public class Patrol : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            this.GetComponent<Patrol>().enabled = false;
             speed = 0f;
             FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyShot", GetComponent<Transform>().position);
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 4f);
             animator.SetTrigger("death");
             deathParticle.GetComponent<ParticleSystem>().Play();
-            //enemyDummy.isKinematic = true;
+            enemyDummy.simulated = false;
             GetComponent<BoxCollider2D>().enabled = false;
             //GetComponent<CircleCollider2D>().enabled = false;
         }

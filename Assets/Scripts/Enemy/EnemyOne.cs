@@ -92,18 +92,19 @@ public class EnemyOne : BaseEnemy
     {
         if (collision.collider.CompareTag("Ammo"))
         {
+            rbe.simulated = false;
+            rollAnim.SetActive(false);
             FMODUnity.RuntimeManager.PlayOneShot("event:/enemyShot", GetComponent<Transform>().position);
             attackRange = 0f;
             attackPower = 0f;
             moveSpeed = 0f;
             moveSpeedAttack = 0f;
             //ChangeState(State.Idle);
-            rollAnim.SetActive(false);
             deathParticle.GetComponent<ParticleSystem>().Play();
             ScoringSystem.theScore += 35;
             animator.SetTrigger("death");
             Destroy(gameObject, 4f);
-            rbe.isKinematic = true;
+            //rbe.isKinematic = true;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;
         }
