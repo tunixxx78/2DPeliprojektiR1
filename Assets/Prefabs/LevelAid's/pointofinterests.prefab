@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1471633335002881164}
   - component: {fileID: 1362939122285099350}
   - component: {fileID: 1362939122285099351}
+  - component: {fileID: 4192726690063778087}
   m_Layer: 11
   m_Name: pointofinterests
   m_TagString: Untagged
@@ -131,7 +132,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2e9fa38a48a159540bd05ebfa822312d, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -168,6 +169,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1471633335002881164}
+--- !u!114 &4192726690063778087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539099170665534335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e691f45a404ec4468c4b252abcbd115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3761078285035715840
 GameObject:
   m_ObjectHideFlags: 0
