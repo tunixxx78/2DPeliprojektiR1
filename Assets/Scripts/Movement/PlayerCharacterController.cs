@@ -71,6 +71,13 @@ public class PlayerCharacterController : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
             animator.SetTrigger("Attack");
         }
+        Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
+        if (colliders == null)
+        {
+            isGrounded = false;
+            animator.speed = 1f;
+            animator.SetBool("InAir", true);
+        }
 
 
     }
@@ -194,7 +201,7 @@ public class PlayerCharacterController : MonoBehaviour
     public void OnLadder()
     {
         rb.velocity = new Vector2(0f, 0f);
-        animator.SetBool("isClimbing", true);
+        animator.SetBool("IsClimbing", true);
         animator.speed = 0f;
     }
     public void IsNotClimbing()
