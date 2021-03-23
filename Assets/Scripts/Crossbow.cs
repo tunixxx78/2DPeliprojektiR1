@@ -15,6 +15,8 @@ public class Crossbow : MonoBehaviour
     public int numberOfPoints;
     public float spaceBeetweenPoints;
     Vector2 direction;
+    [SerializeField] private float fireRate = 1f;
+    private float nextFire = 0f;
 
 
 
@@ -36,9 +38,9 @@ public class Crossbow : MonoBehaviour
         direction = mousePosition - bowPosition;
         transform.up = direction;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time >= nextFire)
         {
-            
+            nextFire = Time.time + fireRate;
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
             Shoot();
 

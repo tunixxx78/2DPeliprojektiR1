@@ -71,6 +71,13 @@ public class PlayerCharacterController : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
             animator.SetTrigger("Attack");
         }
+        Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
+        if (colliders == null)
+        {
+            isGrounded = false;
+            animator.speed = 1f;
+            animator.SetBool("InAir", true);
+        }
 
 
     }
@@ -106,11 +113,12 @@ public class PlayerCharacterController : MonoBehaviour
 
     }
 
-    void Jump()
+    public void Jump()
     {
         if (Input.GetKey(KeyCode.Space))
         {
             animator.SetBool("InAir", true);
+            animator.speed = 1f;
             animator.SetBool("IsClimbing", false);
         }
 
@@ -119,6 +127,7 @@ public class PlayerCharacterController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpCount++;
             animator.SetBool("InAir", true);
+            animator.speed = 1f;
             animator.SetBool("IsClimbing", false);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Jump", GetComponent<Transform>().position);
         }
@@ -130,7 +139,7 @@ public class PlayerCharacterController : MonoBehaviour
         CheckIfGrounded();
     }
 
-    void CheckIfGrounded()
+    public void CheckIfGrounded()
     {
         Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
         if (colliders != null)
@@ -146,6 +155,7 @@ public class PlayerCharacterController : MonoBehaviour
         {
             isGrounded = true;
         }
+       
         else
         {
             /* if (isGrounded)
@@ -185,6 +195,14 @@ public class PlayerCharacterController : MonoBehaviour
     public void IsClimbing()
     {
         animator.SetBool("IsClimbing", true);
+        animator.speed = 1f;
+    }
+
+    public void OnLadder()
+    {
+        rb.velocity = new Vector2(0f, 0f);
+        animator.SetBool("IsClimbing", true);
+        animator.speed = 0f;
     }
     public void IsNotClimbing()
     {

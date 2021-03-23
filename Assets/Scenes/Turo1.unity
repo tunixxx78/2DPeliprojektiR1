@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -34996,8 +34996,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: fireRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: launchForce
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: arrowLifeSpan
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 659667689, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: reStart
@@ -45268,12 +45276,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   moveSpeed: 1
-  moveSpeedAttack: 4
+  moveSpeedAttack: 20
   attackPower: 0
   maxIdleTime: 2
   maxPatrolTime: 3
-  visionRange: 8
-  attackRange: 6
+  visionRange: 10
+  attackRange: 10
   agressiveRange: 0
   deathParticle: {fileID: 266957768}
   head: {fileID: 8023293716119850699}
@@ -46148,12 +46156,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   moveSpeed: 1
-  moveSpeedAttack: 4
+  moveSpeedAttack: 20
   attackPower: 0
   maxIdleTime: 2
   maxPatrolTime: 3
-  visionRange: 8
-  attackRange: 6
+  visionRange: 10
+  attackRange: 10
   agressiveRange: 0
   deathParticle: {fileID: 1593420867}
   head: {fileID: 8023293716710657691}
@@ -47783,12 +47791,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   moveSpeed: 1
-  moveSpeedAttack: 4
+  moveSpeedAttack: 20
   attackPower: 0
   maxIdleTime: 2
   maxPatrolTime: 3
-  visionRange: 8
-  attackRange: 6
+  visionRange: 10
+  attackRange: 10
   agressiveRange: 0
   deathParticle: {fileID: 684065390}
   head: {fileID: 8023293717265565355}
@@ -48608,12 +48616,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   moveSpeed: 1
-  moveSpeedAttack: 4
+  moveSpeedAttack: 20
   attackPower: 0
   maxIdleTime: 2
   maxPatrolTime: 3
-  visionRange: 8
-  attackRange: 6
+  visionRange: 10
+  attackRange: 10
   agressiveRange: 0
   deathParticle: {fileID: 1567766134}
   head: {fileID: 8023293717467760215}
