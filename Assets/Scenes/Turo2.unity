@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4314,7 +4314,7 @@ Transform:
   - {fileID: 1554931264}
   - {fileID: 1086146718}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &289920981
 PrefabInstance:
@@ -4540,7 +4540,7 @@ Transform:
   - {fileID: 1576332030}
   - {fileID: 56175530}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315985868
 GameObject:
@@ -5445,6 +5445,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 366024220}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer
@@ -7129,6 +7144,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 545625455}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer
@@ -12230,6 +12260,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 824490972}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer
@@ -14360,7 +14405,7 @@ PrefabInstance:
     - target: {fileID: 371651884703118374, guid: d7ad17eff257ec6448ff158eb17b2d61,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 371651884703118374, guid: d7ad17eff257ec6448ff158eb17b2d61,
         type: 3}
@@ -14973,8 +15018,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: fireRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: launchForce
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: arrowLifeSpan
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 659667689, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: reStart
@@ -19251,6 +19304,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 1251916176}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer
@@ -22645,6 +22713,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 1509358192}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer
@@ -23101,7 +23184,7 @@ Transform:
   - {fileID: 2083043544}
   - {fileID: 1666906397}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531811535
 GameObject:
@@ -23859,6 +23942,21 @@ PrefabInstance:
       propertyPath: mb
       value: 
       objectReference: {fileID: 1570829310}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: visionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: moveSpeedAttack
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_Layer

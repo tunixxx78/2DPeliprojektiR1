@@ -41,7 +41,7 @@ public class Arrow : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
 
-        if (gameObject.tag == "Missile")
+        if (gameObject.tag == "Ammo")
             Destroy(gameObject, 5);
     }
 }
