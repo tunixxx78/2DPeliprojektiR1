@@ -6,7 +6,12 @@ public class Arrow : MonoBehaviour
 {
     private Rigidbody2D rb;
     private bool hasHit;
-    
+
+    [SerializeField]
+    GameObject projectileParticle;
+
+    private bool isQuitting = false;
+
 
     private void Start()
     {
@@ -37,11 +42,33 @@ public class Arrow : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        hasHit = true;
+        /*hasHit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
 
         if (gameObject.tag == "Ammo")
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 5);*/
+        Destroy(this.gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        if (!isQuitting)
+        {
+            if (projectileParticle)
+            {
+                //Spawn projectileparticle where this game object gets destroyed
+                GameObject particle = Instantiate(projectileParticle, this.transform.position, Quaternion.identity);
+                Destroy(particle, 1);
+            }
+        }
+        
+        
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        isQuitting = true;
     }
 }

@@ -11,6 +11,8 @@ public class UnparentClone : MonoBehaviour
         for (int i = 0; i < clonesToUnparent.Length; i++)
         {
             clonesToUnparent[i].transform.parent = null;
+            Destroy(clonesToUnparent[i], 3);
+
         }
     }
 }

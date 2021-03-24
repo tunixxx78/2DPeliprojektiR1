@@ -7,6 +7,10 @@ public class AmmoMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D ammoRb;
     [SerializeField] private float force = 3f;
 
+    [SerializeField] private GameObject hitParticle;
+
+    private bool isQuitting = false;
+
     private void Awake()
     {
         GetComponent<Rigidbody2D>();
@@ -42,6 +46,27 @@ public class AmmoMovement : MonoBehaviour
         {
             Destroy(gameObject, 5f);
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (!isQuitting)
+        {
+            if (hitParticle)
+            {
+                //Spawn projectileparticle where this game object gets destroyed
+                GameObject particle = Instantiate(hitParticle, this.transform.position, Quaternion.identity);
+                Destroy(particle, 1);
+            }
+        }
+        
+
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        isQuitting = true;
     }
 
 }

@@ -9,6 +9,7 @@ public class Collecting : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
 
     {
+        GetComponent<CircleCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
         collecting.GetComponent<ParticleSystem>().Play();
         FMODUnity.RuntimeManager.PlayOneShot("event:/Collecting", GetComponent<Transform>().position);
