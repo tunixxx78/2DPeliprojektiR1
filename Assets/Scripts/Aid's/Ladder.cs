@@ -12,7 +12,7 @@ public class Ladder : MonoBehaviour
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, climbSpeed);
             FindObjectOfType<PlayerCharacterController>().IsClimbing();
-            
+
         }
 
         else if (collision.tag == "Player" && Input.GetKey(KeyCode.S))
@@ -26,13 +26,13 @@ public class Ladder : MonoBehaviour
         }
         else if (collision.tag != "Player")
         {
-            FindObjectOfType<PlayerCharacterController>().CheckIfGrounded();
+            FindObjectOfType<PlayerCharacterController>().Jump();
         }
 
         else
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0.2f);
-            
+
         }
     }
     

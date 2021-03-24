@@ -71,13 +71,6 @@ public class PlayerCharacterController : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Shoot", GetComponent<Transform>().position);
             animator.SetTrigger("Attack");
         }
-        Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
-        if (colliders == null)
-        {
-            isGrounded = false;
-            animator.speed = 1f;
-            animator.SetBool("InAir", true);
-        }
 
 
     }
@@ -104,6 +97,10 @@ public class PlayerCharacterController : MonoBehaviour
         {
             characterScale.x = -0.15f * sizeMultiplier; // kertoo koon multiplierillä, Turon lisäys.
             canvasBoard.transform.localScale = new Vector3(-0.01f, 0.01f, 0.01f);
+        }
+        if (rb.velocity.y != 0f)
+        {
+            animator.speed = 1f;
         }
         transform.localScale = characterScale;
 
@@ -145,6 +142,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (colliders != null)
         {
             isGrounded = true;
+            animator.speed = 1f;
             jumpCount = 0;
             jumpCooldown = Time.time + 0.2f;
             animator.SetBool("InAir", false);
@@ -154,6 +152,7 @@ public class PlayerCharacterController : MonoBehaviour
         else if (Time.time < jumpCooldown)
         {
             isGrounded = true;
+            animator.speed = 1f;
         }
        
         else
@@ -204,10 +203,10 @@ public class PlayerCharacterController : MonoBehaviour
         animator.SetBool("IsClimbing", true);
         animator.speed = 0f;
     }
-    public void IsNotClimbing()
+    /*public void IsNotClimbing()
     {
         animator.SetBool("isClimbing", false);
-    }
+    }*/
 
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
