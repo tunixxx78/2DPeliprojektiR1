@@ -56,19 +56,22 @@ public abstract class BaseEnemy : MonoBehaviour
 
     private void CheckLineOfSight()
     {
-        distanceOfPlayer = Vector2.Distance(transform.position, player.transform.position);
-        RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position);
-
-        if (raycast)
+        if (player != null)
         {
-            if (distanceOfPlayer < visionRange && enemyState != State.Agressive)
-            {
-                ChangeState(State.Agressive);
+            distanceOfPlayer = Vector2.Distance(transform.position, player.transform.position);
+            RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position);
 
-            }
-            else
+            if (raycast)
             {
-                return;
+                if (distanceOfPlayer < visionRange && enemyState != State.Agressive)
+                {
+                    ChangeState(State.Agressive);
+
+                }
+                else
+                {
+                    return;
+                }
             }
         }
 

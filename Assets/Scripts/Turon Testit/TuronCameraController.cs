@@ -28,15 +28,19 @@ public class TuronCameraController : MonoBehaviour
 
     private Vector3 GetWantedPosition(bool followY = true) 
     {
-        float x = Mathf.Clamp(player.position.x + offset.x, minX, maxX);
-        float y = Mathf.Clamp(player.position.y + offset.y, minY, maxY);
-        //float y = followY ? player.position.y + offset.y : transform.position.y;
-
-        /*if(!followY && cameraY != -10000f)
+        if (player != null)
         {
-            y = cameraY;
-        }*/
-        return new Vector3(x, y, -10f);
+            float x = Mathf.Clamp(player.position.x + offset.x, minX, maxX);
+            float y = Mathf.Clamp(player.position.y + offset.y, minY, maxY);
+            //float y = followY ? player.position.y + offset.y : transform.position.y;
+
+            /*if(!followY && cameraY != -10000f)
+            {
+                y = cameraY;
+            }*/
+            return new Vector3(x, y, -10f);
+        }
+        return new Vector3(0f, 0f, -10f);
     }
 
     public Vector3 GetWantedPosition2(bool followY = true)
@@ -49,11 +53,14 @@ public class TuronCameraController : MonoBehaviour
 
     private void Update()
     {
-        Vector3 wantedPosition = GetWantedPosition(false);
+        if (player != null)
+        {
+            Vector3 wantedPosition = GetWantedPosition(false);
 
-        LayerManager.instance.MoveableLayers(transform.position - oldPosition);
-        oldPosition = transform.position;
+            LayerManager.instance.MoveableLayers(transform.position - oldPosition);
+            oldPosition = transform.position;
 
-        transform.position = Vector3.SmoothDamp(transform.position, wantedPosition, ref velocity, cameraFollowSpeed);
+            transform.position = Vector3.SmoothDamp(transform.position, wantedPosition, ref velocity, cameraFollowSpeed);
+        }
     }
 }

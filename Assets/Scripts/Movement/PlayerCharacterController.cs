@@ -117,6 +117,7 @@ public class PlayerCharacterController : MonoBehaviour
             animator.SetBool("InAir", true);
             animator.speed = 1f;
             animator.SetBool("IsClimbing", false);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || jumpCount < extraJumps))

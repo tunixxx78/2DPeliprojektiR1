@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         endFade.SetActive(true);
+        FMODUnity.RuntimeManager.MuteAllEvents(true);
         Invoke("StartNewLevel", 4f);
         
         /*if (gameHasEnded == false)
@@ -30,7 +31,10 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        player.transform.position = restartPoint.transform.position;
+        if (player != null)
+        {
+            player.transform.position = restartPoint.transform.position;
+        }
     }
     public void ZeroHealth()
     {

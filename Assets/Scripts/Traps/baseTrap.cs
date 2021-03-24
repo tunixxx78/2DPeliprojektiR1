@@ -56,19 +56,22 @@ public abstract class baseTrap : MonoBehaviour
 
     public void CheckLineOfSight()
     {
-        distanceOfPlayer = Vector2.Distance(transform.position, player.transform.position);
-        RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position);
-
-        if (raycast)
+        if (player != null)
         {
-            if (distanceOfPlayer < visionRange && trapState != State.Move)
-            {
-                ChangeState(State.Move);
-            }
+            distanceOfPlayer = Vector2.Distance(transform.position, player.transform.position);
+            RaycastHit2D raycast = Physics2D.Linecast(transform.position, player.transform.position);
 
-            if (distanceOfPlayer < attackRange && trapState != State.Attack)
+            if (raycast)
             {
-                ChangeState(State.Attack);
+                if (distanceOfPlayer < visionRange && trapState != State.Move)
+                {
+                    ChangeState(State.Move);
+                }
+
+                if (distanceOfPlayer < attackRange && trapState != State.Attack)
+                {
+                    ChangeState(State.Attack);
+                }
             }
         }
     }
