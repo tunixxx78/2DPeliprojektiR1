@@ -147,20 +147,15 @@ public class PlayerCharacterController : MonoBehaviour
             jumpCooldown = Time.time + 0.2f;
             animator.SetBool("InAir", false);
             animator.SetBool("IsClimbing", false);
-
+           
         }
         else if (Time.time < jumpCooldown)
         {
             isGrounded = true;
             animator.speed = 1f;
         }
-       
         else
         {
-            /* if (isGrounded)
-             {
-                 lastTimeGrounded = Time.time;
-             }*/
             isGrounded = false;
             animator.SetBool("runAnim", false);
         }
@@ -199,14 +194,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     public void OnLadder()
     {
+        rb.gravityScale = 0f;
         rb.velocity = new Vector2(0f, 0f);
         animator.SetBool("IsClimbing", true);
         animator.speed = 0f;
     }
-    /*public void IsNotClimbing()
-    {
-        animator.SetBool("isClimbing", false);
-    }*/
 
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
@@ -239,7 +231,18 @@ public class PlayerCharacterController : MonoBehaviour
             player.transform.parent = null;
 
         }
+        
     }
-   
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            rb.gravityScale = 1f;
+            animator.speed = 1f;
+            animator.SetBool("IsClimbing", false);
+            animator.SetBool("InAir", true);
+        }
+    }
+
+
 }

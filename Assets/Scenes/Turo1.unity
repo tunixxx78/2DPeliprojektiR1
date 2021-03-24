@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -872,8 +872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 1790647039}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 1790647039}
+  alsoShow: {fileID: 1790647039}
 --- !u!58 &52869031
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5422,8 +5422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 354722885}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 354722885}
+  alsoShow: {fileID: 354722885}
 --- !u!58 &270133652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5668,8 +5668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 666486780}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 666486780}
+  alsoShow: {fileID: 666486780}
 --- !u!58 &300604537
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6465,8 +6465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 587347671}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 587347671}
+  alsoShow: {fileID: 587347671}
 --- !u!58 &357655052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7932,8 +7932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 1335636272}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 1335636272}
+  alsoShow: {fileID: 1335636272}
 --- !u!58 &451998968
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9844,6 +9844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ladder (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342609044415973126, guid: d704435396a744f72b15500dcefa5021,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
       objectReference: {fileID: 0}
     - target: {fileID: 4342609044415973127, guid: d704435396a744f72b15500dcefa5021,
         type: 3}
@@ -11946,8 +11951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 73961371}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 73961371}
+  alsoShow: {fileID: 73961371}
 --- !u!58 &656988485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19351,6 +19356,11 @@ PrefabInstance:
       objectReference: {fileID: 666486780}
     - target: {fileID: 9092019327654181066, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 1471777231}
+    - target: {fileID: 9092019327654181066, guid: 02c3d185648b8428794f513df87de6e2,
+        type: 3}
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 273148945}
@@ -19502,8 +19512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aid: {fileID: 1199553591}
-  aid1: {fileID: 0}
-  aid2: {fileID: 0}
+  aid1: {fileID: 1199553591}
+  aid2: {fileID: 1199553591}
 --- !u!58 &1134516706
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22231,6 +22241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladder
       objectReference: {fileID: 0}
+    - target: {fileID: 4342609044415973126, guid: d704435396a744f72b15500dcefa5021,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 4342609044415973127, guid: d704435396a744f72b15500dcefa5021,
         type: 3}
       propertyPath: m_Size.x
@@ -24465,6 +24480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9092019327654181066, guid: 02c3d185648b8428794f513df87de6e2,
         type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 1471777231}
+    - target: {fileID: 9092019327654181066, guid: 02c3d185648b8428794f513df87de6e2,
+        type: 3}
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1063775931}
@@ -24573,6 +24593,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 995423900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1471777231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471777232}
+  m_Layer: 0
+  m_Name: DummyObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1471777232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471777231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1476733808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24903,7 +24953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aid: {fileID: 424399020}
   aid1: {fileID: 1731933939}
-  aid2: {fileID: 0}
+  aid2: {fileID: 424399020}
 --- !u!58 &1517045972
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27427,6 +27477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladder (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4342609044415973126, guid: d704435396a744f72b15500dcefa5021,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 4342609044415973127, guid: d704435396a744f72b15500dcefa5021,
         type: 3}
       propertyPath: m_Size.x
@@ -29696,8 +29751,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toShow: {fileID: 846674210}
-  toShowToo: {fileID: 0}
-  alsoShow: {fileID: 0}
+  toShowToo: {fileID: 846674210}
+  alsoShow: {fileID: 846674210}
 --- !u!58 &1743535372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32033,7 +32088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aid: {fileID: 517126637}
   aid1: {fileID: 587347671}
-  aid2: {fileID: 0}
+  aid2: {fileID: 517126637}
 --- !u!58 &1858011161
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32611,6 +32666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ladder (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342609044415973126, guid: d704435396a744f72b15500dcefa5021,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
       objectReference: {fileID: 0}
     - target: {fileID: 4342609044415973127, guid: d704435396a744f72b15500dcefa5021,
         type: 3}
@@ -35304,8 +35364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aid: {fileID: 603661091}
-  aid1: {fileID: 0}
-  aid2: {fileID: 0}
+  aid1: {fileID: 603661091}
+  aid2: {fileID: 603661091}
 --- !u!58 &2007149952
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36837,8 +36897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aid: {fileID: 1042705556}
-  aid1: {fileID: 0}
-  aid2: {fileID: 0}
+  aid1: {fileID: 1042705556}
+  aid2: {fileID: 1042705556}
 --- !u!58 &2110521573
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37504,7 +37564,7 @@ PrefabInstance:
         type: 3}
       propertyPath: aid
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 143204577}
     - target: {fileID: 248699324768409538, guid: 4dd7cb1e9095a40c2b90ad51a9719ea5,
         type: 3}
       propertyPath: aid1
@@ -38235,6 +38295,16 @@ PrefabInstance:
     - target: {fileID: 5421561348010463426, guid: c37069d6523a7466397559651200f07c,
         type: 3}
       propertyPath: toShow
+      value: 
+      objectReference: {fileID: 315337691}
+    - target: {fileID: 5421561348010463426, guid: c37069d6523a7466397559651200f07c,
+        type: 3}
+      propertyPath: alsoShow
+      value: 
+      objectReference: {fileID: 315337691}
+    - target: {fileID: 5421561348010463426, guid: c37069d6523a7466397559651200f07c,
+        type: 3}
+      propertyPath: toShowToo
       value: 
       objectReference: {fileID: 315337691}
     - target: {fileID: 5421561348010463427, guid: c37069d6523a7466397559651200f07c,

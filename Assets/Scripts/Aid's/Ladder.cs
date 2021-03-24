@@ -23,6 +23,7 @@ public class Ladder : MonoBehaviour
         else if (collision.tag == "Player")
         {
             FindObjectOfType<PlayerCharacterController>().OnLadder();
+
         }
         else if (collision.tag != "Player")
         {
@@ -31,7 +32,7 @@ public class Ladder : MonoBehaviour
 
         else
         {
-            collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0.2f);
+            collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0.4f);
 
         }
     }
