@@ -62,7 +62,7 @@ public abstract class BaseEnemy : MonoBehaviour
         enemyCurrentHealth -= dmg;
     }
 
-            private void CheckLineOfSight()
+    private void CheckLineOfSight()
     {
         if (player != null)
         {

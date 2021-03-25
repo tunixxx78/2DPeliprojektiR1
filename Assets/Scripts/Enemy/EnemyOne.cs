@@ -27,11 +27,13 @@ public class EnemyOne : BaseEnemy
             animator.SetBool("isMoving", true);
         }
 
-        float direction = Mathf.Sign(player.transform.position.x - transform.position.x);
+        if (player != null)
+        {
+            float direction = Mathf.Sign(player.transform.position.x - transform.position.x);
 
-        transform.localScale = new Vector3(direction * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        movements = new Vector2(transform.localScale.x * moveSpeedAttack, rbe.velocity.y);
-
+            transform.localScale = new Vector3(direction * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            movements = new Vector2(transform.localScale.x * moveSpeedAttack, rbe.velocity.y);
+        }
         if (distanceOfPlayer >= attackRange)
         {
             ChangeState(State.Idle);

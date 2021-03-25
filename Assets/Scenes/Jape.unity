@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4478,7 +4478,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Music
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -35514,18 +35514,38 @@ PrefabInstance:
     - target: {fileID: 3986996539441676980, guid: dee75144039262b4d944b5a2a61e423e,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 13
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3986996539441676980, guid: dee75144039262b4d944b5a2a61e423e,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: 539077131
+      value: 822926547
       objectReference: {fileID: 0}
     - target: {fileID: 3986996539441676980, guid: dee75144039262b4d944b5a2a61e423e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3986996539441676981, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986996539441676981, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986996539441676981, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986996539441676981, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 3986996541269088616, guid: dee75144039262b4d944b5a2a61e423e,
         type: 3}
       propertyPath: m_LocalPosition.z
