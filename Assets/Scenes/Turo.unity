@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2739,8 +2739,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
+      propertyPath: enemyMaxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
       propertyPath: moveSpeedAttack
-      value: 20
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: enemyCurrentHealth
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -11556,6 +11566,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 371651885523815646, guid: d7ad17eff257ec6448ff158eb17b2d61,
+        type: 3}
+      propertyPath: timeRemaining
+      value: 360
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7ad17eff257ec6448ff158eb17b2d61, type: 3}
 --- !u!1 &625249205
@@ -12101,6 +12116,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -171.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.g
+      value: 0.00879994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.r
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.g
+      value: 0.023529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.r
+      value: 0.9921569
       objectReference: {fileID: 0}
     - target: {fileID: 4989803044464649938, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
         type: 3}
@@ -39443,12 +39483,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718588, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.147293
+      value: 26.77
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718588, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2928057
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718588, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -39557,8 +39597,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
+      propertyPath: enemyMaxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
       propertyPath: moveSpeedAttack
-      value: 20
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
+      propertyPath: enemyCurrentHealth
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715974432312, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -39785,7 +39835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659667749, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: StopEvent
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 659667749, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: m_Enabled

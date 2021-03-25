@@ -395,6 +395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718590, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023293715932718590, guid: 33645682688764ff180ff7e118d3668e,
+        type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -5117,7 +5122,7 @@ MonoBehaviour:
   stairs: {fileID: 373924423}
   aid: {fileID: 275805209}
   aid2: {fileID: 1997128608}
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 684608873}
   vineBridge: {fileID: 377864546}
   setActive: 1
 --- !u!61 &373924425
@@ -9335,6 +9340,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 96681746}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &684608873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684608874}
+  m_Layer: 0
+  m_Name: DummyObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &684608874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684608873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &688792654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7893376258243161214, guid: dbad484c8d16e40d693860d9b9fc62ab,
@@ -14962,7 +14997,7 @@ MonoBehaviour:
   m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   m_Intensity: 1.38
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 000000000baa2120
+  m_ApplyToSortingLayers: 
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -21702,6 +21737,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4342609044415973126, guid: d704435396a744f72b15500dcefa5021,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 4342609044415973127, guid: d704435396a744f72b15500dcefa5021,
         type: 3}
       propertyPath: m_Size.x
@@ -27379,7 +27419,7 @@ MonoBehaviour:
   stairs: {fileID: 2074616913}
   aid: {fileID: 0}
   aid2: {fileID: 0}
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 684608873}
   vineBridge: {fileID: 377864546}
   setActive: 1
 --- !u!61 &2074616915
@@ -35344,7 +35384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -35486,6 +35526,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3986996541269088616, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.39
+      objectReference: {fileID: 0}
     - target: {fileID: 3986996541269088617, guid: dee75144039262b4d944b5a2a61e423e,
         type: 3}
       propertyPath: m_SortingLayer
@@ -36434,6 +36479,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.g
+      value: 0.08448437
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.r
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.g
+      value: 0.10950938
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4989803044464649938, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
         type: 3}
@@ -38289,7 +38359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9fcef5b19a9f146bf7f14d54361d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 500
+  timeRemaining: 300
   timerIsRunning: 0
   timeText: {fileID: 8289761178139356469}
 --- !u!114 &8289761178139356469
@@ -38306,7 +38376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_Color: {r: 0.23921569, g: 0.56078434, b: 0.41960785, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -38750,7 +38820,7 @@ MonoBehaviour:
   stairs: {fileID: 9092019328704881136}
   aid: {fileID: 2009801319}
   aid2: {fileID: 0}
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 684608873}
   vineBridge: {fileID: 377864546}
   setActive: 1
 --- !u!61 &9092019328704881139

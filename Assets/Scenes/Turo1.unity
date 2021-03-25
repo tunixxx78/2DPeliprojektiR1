@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11452,6 +11452,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.b
+      value: 0.05106186
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.g
+      value: 0.042052314
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key0.r
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.b
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.g
+      value: 0.07450981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342012, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: gradient.key1.r
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 4989803044464649938, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
         type: 3}
@@ -23534,7 +23564,7 @@ PrefabInstance:
     - target: {fileID: 371651885523815646, guid: d7ad17eff257ec6448ff158eb17b2d61,
         type: 3}
       propertyPath: timeRemaining
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 371651885523815647, guid: d7ad17eff257ec6448ff158eb17b2d61,
         type: 3}
@@ -46055,6 +46085,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7002253be56648ebb40b2cffddd6fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyCurrentHealth: 2
+  enemyMaxHealth: 2
   health: 0
   moveSpeed: 1
   moveSpeedAttack: 20
@@ -46935,6 +46967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7002253be56648ebb40b2cffddd6fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyCurrentHealth: 2
+  enemyMaxHealth: 2
   health: 0
   moveSpeed: 1
   moveSpeedAttack: 20
@@ -48570,6 +48604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7002253be56648ebb40b2cffddd6fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyCurrentHealth: 2
+  enemyMaxHealth: 2
   health: 0
   moveSpeed: 1
   moveSpeedAttack: 20
@@ -49395,6 +49431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7002253be56648ebb40b2cffddd6fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyCurrentHealth: 3
+  enemyMaxHealth: 3
   health: 0
   moveSpeed: 1
   moveSpeedAttack: 20
