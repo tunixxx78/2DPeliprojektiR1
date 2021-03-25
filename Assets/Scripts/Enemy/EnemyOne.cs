@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyOne : BaseEnemy
 {
     //[SerializeField] private Rigidbody2D enemyOne;
-    
+
 
 
     protected override void Agressive()
@@ -58,7 +58,7 @@ public class EnemyOne : BaseEnemy
 
         currentPatrolTime += Time.deltaTime;
 
-        if(currentPatrolTime >= maxPatrolTime)
+        if (currentPatrolTime >= maxPatrolTime)
         {
             currentPatrolTime = 0f;
             animator.SetBool("isMoving", false);
@@ -70,7 +70,27 @@ public class EnemyOne : BaseEnemy
 
     protected override void Death()
     {
-
+        if (enemyCurrentHealth <= 0)
+        {
+            rbe.simulated = false;
+            attackRange = 0f;
+            attackPower = 0f;
+            moveSpeed = 0f;
+            moveSpeedAttack = 0f;
+            //ChangeState(State.Idle);
+            rollAnim.SetActive(false);
+            deathParticle.GetComponent<ParticleSystem>().Play();
+            ScoringSystem.theScore += 35;
+            animator.SetTrigger("death");
+            Destroy(gameObject, 4f);
+            //rbe.isKinematic = true;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
+        }
+        else
+        {
+            return;
+        }
     }
 
     protected override void Idle()
@@ -87,31 +107,17 @@ public class EnemyOne : BaseEnemy
 
         }
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ammo"))
         {
-            rbe.simulated = false;
-            rollAnim.SetActive(false);
             FMODUnity.RuntimeManager.PlayOneShot("event:/enemyShot", GetComponent<Transform>().position);
-            attackRange = 0f;
-            attackPower = 0f;
-            moveSpeed = 0f;
-            moveSpeedAttack = 0f;
-            //ChangeState(State.Idle);
-            deathParticle.GetComponent<ParticleSystem>().Play();
-            ScoringSystem.theScore += 35;
-            animator.SetTrigger("death");
-            Destroy(gameObject, 4f);
-            //rbe.isKinematic = true;
-            GetComponent<BoxCollider2D>().enabled = false;
-            GetComponent<CircleCollider2D>().enabled = false;
-        }
-        else
-        {
-            return;              
+            EnemyTakeDamage(1);
+            Death();
         }
     }
-    
+
+
+
+
 }
