@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         endFade.SetActive(true);
-        FMODUnity.RuntimeManager.MuteAllEvents(true);
+        
         Invoke("StartNewLevel", 4f);
         
         /*if (gameHasEnded == false)
