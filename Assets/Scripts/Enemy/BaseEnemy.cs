@@ -9,6 +9,8 @@ using System;
 public abstract class BaseEnemy : MonoBehaviour
 {
     [SerializeField]
+    protected int enemyCurrentHealth, enemyMaxHealth;
+    [SerializeField]
     protected float health, moveSpeed, moveSpeedAttack, attackPower, maxIdleTime, maxPatrolTime,
                                      visionRange = 5f, attackRange = 2f, agressiveRange;
     protected float distanceOfPlayer, currentIdleTime = 0f, currentPatrolTime = 0f;
@@ -40,6 +42,7 @@ public abstract class BaseEnemy : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("HoodedMageFinalPrefab").transform;
+        enemyCurrentHealth = enemyMaxHealth;
     }
 
     private void FixedUpdate()
@@ -54,7 +57,12 @@ public abstract class BaseEnemy : MonoBehaviour
 
     }
 
-    private void CheckLineOfSight()
+    protected void EnemyTakeDamage(int dmg)
+    {
+        enemyCurrentHealth -= dmg;
+    }
+
+            private void CheckLineOfSight()
     {
         if (player != null)
         {
@@ -76,6 +84,7 @@ public abstract class BaseEnemy : MonoBehaviour
         }
 
     }
+
 
     protected abstract void Idle();
     protected abstract void Patrol();
