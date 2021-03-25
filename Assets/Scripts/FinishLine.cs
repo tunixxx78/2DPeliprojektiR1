@@ -14,6 +14,7 @@ public class FinishLine : MonoBehaviour
         {
             ScoringSystem.theScore += 100;
             FindObjectOfType<GameManager>().EndGame();
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/Outro", GetComponent<Transform>().position);
         }
         if(collision.CompareTag("CloneCharacter"))
         {
