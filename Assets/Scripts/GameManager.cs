@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     {
         endFade.SetActive(true);
         FindObjectOfType<PlayerCharacterController>().LevelEnd();
-        Invoke("StartNewLevel", 4f);
+        Invoke("StartNewLevel", 6f);
         
         /*if (gameHasEnded == false)
         {

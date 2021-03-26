@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -567,6 +567,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 348619813}
     m_Modifications:
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: delayTime
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: timeToSpawn
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4313884936397753942, guid: 9e6040181dd52400fbe2aa3544423049,
         type: 3}
       propertyPath: m_Name
@@ -1466,12 +1476,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -2717,12 +2727,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -3407,12 +3417,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -5364,12 +5374,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -7830,12 +7840,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -9512,6 +9522,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 348619813}
     m_Modifications:
+    - target: {fileID: 3136271718767013102, guid: 9e6040181dd52400fbe2aa3544423049,
+        type: 3}
+      propertyPath: delayTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4313884936397753942, guid: 9e6040181dd52400fbe2aa3544423049,
         type: 3}
       propertyPath: m_Name
@@ -10565,12 +10580,12 @@ PrefabInstance:
     - target: {fileID: 5017450284211424222, guid: 5b84770d240234035a6915078793f0da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.82
+      value: 2.8999999
       objectReference: {fileID: 0}
     - target: {fileID: 5017450284211424222, guid: 5b84770d240234035a6915078793f0da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.13
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 5017450284211424222, guid: 5b84770d240234035a6915078793f0da,
         type: 3}
@@ -11535,12 +11550,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -12022,7 +12037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 1786232576252841060, guid: 5504199998ecf5643a9ebf21769d8f2c, type: 3}
   launchForce: 20
-  arrowLifeSpan: 0.3
+  arrowLifeSpan: 0.4
   shotPoint: {fileID: 946003533}
   point: {fileID: 1104907012259394275, guid: a1e125792e9ee4243996603673cac275, type: 3}
   numberOfPoints: 0
@@ -14424,12 +14439,12 @@ PrefabInstance:
     - target: {fileID: 9121760139293818211, guid: 6326fb7bb7eb74c4ba091b0e3f5966f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.87
+      value: 2.95
       objectReference: {fileID: 0}
     - target: {fileID: 9121760139293818211, guid: 6326fb7bb7eb74c4ba091b0e3f5966f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.16
+      value: 11.73
       objectReference: {fileID: 0}
     - target: {fileID: 9121760139293818211, guid: 6326fb7bb7eb74c4ba091b0e3f5966f3,
         type: 3}
@@ -15796,12 +15811,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -20979,7 +20994,7 @@ MonoBehaviour:
   priority: 16.29
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 1aac7fe85ed43274b942a6619d6c7b29, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 7ff3756b1494349e89493d44cf9e5149, type: 2}
 --- !u!1001 &1661757949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22494,7 +22509,7 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: enemyMaxHealth
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -25668,12 +25683,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -26160,12 +26175,12 @@ PrefabInstance:
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
       propertyPath: visionRange
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8023293715932718591, guid: 33645682688764ff180ff7e118d3668e,
         type: 3}
@@ -35566,6 +35581,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3986996541269088618, guid: dee75144039262b4d944b5a2a61e423e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee75144039262b4d944b5a2a61e423e, type: 3}
 --- !u!212 &2551298354516533791
