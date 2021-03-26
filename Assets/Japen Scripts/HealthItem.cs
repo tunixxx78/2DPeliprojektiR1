@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class HealthItem : MonoBehaviour
 {
+    [SerializeField]
+    ParticleSystem healthPickupParticle;
+    
+   
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            this.GetComponent<CircleCollider2D>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
+            healthPickupParticle.Play();
+            Destroy(gameObject, 5);
 
         }
     }
