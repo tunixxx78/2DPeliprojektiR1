@@ -12,7 +12,7 @@ public class LeverForClonesTutorial : MonoBehaviour
         if (collision.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             animator.SetTrigger("vaanto");
-            
+           
         }
     }
 

@@ -3305,7 +3305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.200018, y: 141.7}
+  m_AnchoredPosition: {x: 23.200018, y: 132.6}
   m_SizeDelta: {x: 169.61017, y: 72.00412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793316170
@@ -3340,7 +3340,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "EXIT to start screen with \nESCAPE. \nWith B skip tutorial."
+  m_Text: "Press Enter to start game. \nExit with Esc."
 --- !u!222 &793316171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5163,6 +5163,14 @@ PrefabInstance:
     - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: fireRate
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: launchForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 209078396, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
+      propertyPath: arrowLifeSpan
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 659667689, guid: 7c384164adfd74aaf912f472da6b3f1b, type: 3}
       propertyPath: canvasBoard

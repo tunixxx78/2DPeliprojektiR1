@@ -77,11 +77,16 @@ public class PlayerCharacterController : MonoBehaviour
     public void LevelEnd()
     {
         Invoke("StopSound", 0.2f);
+        Invoke("RemovePlayer", 0.6f);
     }
     public void StopSound()
     {
-        player.SetActive(false);
+        
         FMODUnity.RuntimeManager.PlayOneShot("event:/Outro", GetComponent<Transform>().position);
+    }
+    private void RemovePlayer ()
+    {
+        player.SetActive(false);
     }
 
 
