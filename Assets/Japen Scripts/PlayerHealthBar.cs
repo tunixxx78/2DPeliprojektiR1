@@ -55,6 +55,10 @@ public class PlayerHealthBar : MonoBehaviour
     {
         currentHealth += healing;
         healthBar.SetHealth(currentHealth);
+        if(currentHealth > 100)
+        {
+            currentHealth = 100;
+        }
     }
 
 
@@ -81,7 +85,7 @@ public class PlayerHealthBar : MonoBehaviour
             healthBar.gameObject.SetActive(true);
             StartCoroutine(LateCall());
         }
-        else if (collision.collider.CompareTag("Collectible"))
+        else if (collision.collider.CompareTag("HealthItem"))
         {
             GainHealth(20);
             healthBar.gameObject.SetActive(true);
