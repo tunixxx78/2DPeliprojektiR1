@@ -42,6 +42,10 @@ public class Timer : MonoBehaviour
         }
        
     }
+    public void StopTimer()
+    {
+        timerIsRunning = false;
+    }
 
     void DisplayTime(float timeToDisplay)
     {

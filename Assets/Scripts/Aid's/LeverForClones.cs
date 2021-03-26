@@ -17,6 +17,7 @@ public class LeverForClones : MonoBehaviour
         if (collision.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             animator.SetTrigger("vaanto");
+            FindObjectOfType<Timer>().StopTimer();
 
             //in the first level, hides the E icon when player presses E
             if (helperIcon)

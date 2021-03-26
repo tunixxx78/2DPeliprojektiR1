@@ -79,7 +79,7 @@ public class trapLower : baseTrap
     {
         kukkaAttack.SetActive(false);
         kukkaDeath.SetActive(true);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 3f);
         rend.sprite = null;
     }
 
