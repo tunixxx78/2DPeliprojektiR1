@@ -87,7 +87,7 @@ public class PlayerHealthBar : MonoBehaviour
         }
         else if (collision.collider.CompareTag("HealthItem"))
         {
-            GainHealth(20);
+            GainHealth(50);
             healthBar.gameObject.SetActive(true);
             StartCoroutine(LateCall());
         }

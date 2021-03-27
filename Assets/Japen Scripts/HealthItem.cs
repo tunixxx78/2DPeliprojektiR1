@@ -15,6 +15,8 @@ public class HealthItem : MonoBehaviour
         {
             this.GetComponent<CircleCollider2D>().enabled = false;
             this.GetComponent<SpriteRenderer>().enabled = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Collecting", GetComponent<Transform>().position);
+            ScoringSystem.theScore += 150;
             healthPickupParticle.Play();
             Destroy(gameObject, 5);
 
