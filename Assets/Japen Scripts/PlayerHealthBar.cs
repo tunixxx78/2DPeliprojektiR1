@@ -81,18 +81,25 @@ public class PlayerHealthBar : MonoBehaviour
             healthBar.gameObject.SetActive(true);
             StartCoroutine(LateCall());
         }
-        else if (collision.collider.CompareTag("Collectible"))
-        {
-            GainHealth(20);
-            healthBar.gameObject.SetActive(true);
-            StartCoroutine(LateCall());
-        }
+       
+        
         else
         {
             return;
         }
 
+        
 
 
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+         if (collision.CompareTag("Potion"))
+        {
+            GainHealth(50);
+            healthBar.gameObject.SetActive(true);
+            StartCoroutine(LateCall());
+        }
     }
 }
