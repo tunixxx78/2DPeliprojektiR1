@@ -12,7 +12,14 @@ public class ScoringSystem : MonoBehaviour
     void Update()
         {
             scoreText.GetComponent<Text>().text = "" + theScore;
-           
+
+            if (theScore > PlayerPrefs.GetInt("HighScore", 0))
+                {
+                    PlayerPrefs.SetInt("HighScore", theScore);
+
+                }
+            
         }
+    
     
 }
