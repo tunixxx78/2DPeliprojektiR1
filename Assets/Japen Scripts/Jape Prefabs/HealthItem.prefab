@@ -157,6 +157,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4825130693309646666, guid: 5fa3f341deb19e149a94e5ca6978c1a5,
         type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825130693309646666, guid: 5fa3f341deb19e149a94e5ca6978c1a5,
+        type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825130693309646666, guid: 5fa3f341deb19e149a94e5ca6978c1a5,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825130693309646666, guid: 5fa3f341deb19e149a94e5ca6978c1a5,
+        type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].inSlope
       value: -0.7635969
       objectReference: {fileID: 0}
