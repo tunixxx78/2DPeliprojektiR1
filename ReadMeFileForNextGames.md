@@ -2,7 +2,7 @@
 
 Our First schools game project (12.2020-3.2021)
 
-In this project we had 2 coders and 3 graphic artists.
+In this project we had 2 programmers and 3 graphic artists.
 
 My part was to be project lead, game designer and writing code. 
 Roughly 85% of games code is made by me.
