@@ -1,6 +1,6 @@
 # 2DPeliprojektiR1(Forest Guide)
 
-Our First schools game project (12.2020-2.2021)
+Our First schools game project (12.2020-3.2021)
 
 In this project we had 2 coders and 3 graphic artists.
 
