@@ -6,6 +6,7 @@ public class CloneMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed = 6f;
+    [SerializeField] private GameObject cloneDeathCanvas;
 
     private void FixedUpdate()
     {
@@ -20,7 +21,16 @@ public class CloneMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("TrapAmmo"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            cloneDeathCanvas.SetActive(true);
+        }
+        if (rb.position.y < -2.5f)
+        {
+            cloneDeathCanvas.SetActive(true);
+        }
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            cloneDeathCanvas.SetActive(true);
         }
     }
 
@@ -29,6 +39,7 @@ public class CloneMovement : MonoBehaviour
         if (collision.CompareTag("Home"))
         {
             Destroy(gameObject, 0.5f);
+            
         }
     }
 

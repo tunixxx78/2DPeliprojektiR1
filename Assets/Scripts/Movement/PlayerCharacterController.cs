@@ -218,6 +218,9 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)  //Turon lisäämä metodi, pitää hahmon paikallaan platformilla
     {
+        float x = Input.GetAxisRaw("Horizontal");
+        float moveBy = x * speed;
+
         canJump = true;
         if (collision.collider.CompareTag("Platform"))
         {
@@ -232,7 +235,9 @@ public class PlayerCharacterController : MonoBehaviour
         }
         if (collision.collider.CompareTag("Enemy"))
         {
+            rb.velocity = new Vector2(20 * -speed, 8f);
             FMODUnity.RuntimeManager.PlayOneShot("event:/charShot", GetComponent<Transform>().position);
+            
         }
 
 
@@ -259,6 +264,8 @@ public class PlayerCharacterController : MonoBehaviour
             animator.SetBool("InAir", true);
         }
     }
+
+   
 
 
 }
