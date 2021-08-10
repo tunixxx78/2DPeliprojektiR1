@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -47351,6 +47351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: gradient.key1.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905872878471342013, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
+        type: 3}
+      propertyPath: m_Value
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4989803044464649938, guid: 1b6566bcf7dee4a45b6ec9b323706aa8,
         type: 3}
